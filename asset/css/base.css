@@ -1,0 +1,94 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --theme-color-1: #E63946;
+    --theme-color-2: #F1FAEE;
+    --theme-color-3: #A8DADC;
+    --theme-color-4: #457B9D;
+    --theme-color-5: #1D3557;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: title-font;
+    src: url(../font/svn-gilroy/SVN-Gilroy\ Black.otf);
+}
+
+@font-face {
+    font-family: sub-title-font;
+    src: url(../font/svn-gilroy/SVN-Gilroy\ SemiBold.otf);
+}
+
+@font-face {
+    font-family: text-font;
+    src: url(../font/svn-gilroy/SVN-Gilroy\ Light.otf);
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: text-font;
+    box-sizing: border-box;
+}
+
+p {
+    font-family: text-font;
+    color: #1D3557;
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: title-font;
+    color: #1D3557;
+}
+
+body {
+    background: var(--theme-color-2) !important;
+    /* background: url('../img/pattern/cartographer/cartographer.png'); */
+}
+
+
+
+
+/* -------- MAIN LAYOUT */
+.main {
+    width: 1200px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* -------- GRID LAYOUT */
+
+/* .grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid_row {
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+
+
+/* ----- layout for sub container ------*/
+
+.grid {
+    width: 100%;
+    display: grid;
+}
+
+.grid_row {
+    display: flex;
+    flex-wrap: wrap;
+}

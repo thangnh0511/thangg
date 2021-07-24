@@ -1,0 +1,124 @@
+@import url('./base.css');
+
+.cusbtn {
+    width: 250px; 
+    height: 56px;
+    position: relative;
+}
+
+.cusbtn-front {
+    bottom: 0;
+    width: 250px; 
+    height: 56px;
+    background: var(--theme-color-1);
+    display: flex;
+        justify-content: center;
+        align-items: center;
+    transition: ease width .5s;
+    text-decoration: none;
+    margin-top: 50px;
+    position: absolute;
+    transition: ease .2s;
+}
+
+.cusbtn-front >i {
+    font-size: 20px;
+    color: var(--theme-color-2);
+    margin-right: 10px;
+}
+
+.cusbtn-front >h2 {
+    color: var(--theme-color-2);
+}
+
+.cusbtn-behind {
+    position: absolute;
+    top: 0;
+    background: var(--theme-color-5);
+    width: 250px; 
+    height: 56px;
+    z-index: -1;
+}
+
+.cusbtn:hover .cusbtn-front{
+    transform: translate(2px,-2px);
+}
+
+.cusbtn:hover .cusbtn-behind{
+    transform: translate(-2px,2px);
+}
+
+
+/* --------- big - card -------- */
+.cuscard {
+    min-width: 450px; 
+    height: 450px;
+    position: relative;
+}
+
+.cuscard-front {
+    bottom: 0;
+    min-width: 450px; 
+    height: 450px;
+    background: var(--theme-color-3);
+    display: flex;
+        justify-content: center;
+        align-items: center;
+    transition: ease width .5s;
+    text-decoration: none;
+    margin-top: 50px;
+    position: absolute;
+    transition: ease .2s;
+}
+
+.cuscard-front >i {
+    font-size: 20px;
+    color: var(--theme-color-2);
+    margin-right: 10px;
+}
+
+.cuscard-front > h2 {
+    color: var(--theme-color-2);
+}
+
+.cuscard-behind {
+    position: absolute;
+    top: 0;
+    background: var(--theme-color-5);
+    min-width: 450px; 
+    height: 450px;
+    z-index: -1;
+}
+
+.cuscard:hover .cuscard-front{
+    transform: translate(10px,-10px);
+}
+
+.cuscard:hover .cuscard-behind{
+    transform: translate(-4px,4px);
+}
+
+
+/* ----- Small card ----- */
+.cuscard-sm {
+    cursor: pointer;
+    width: 300px;
+    height: 300px;
+    background: var(--theme-color-1);
+    text-align: center;
+    border-radius: 4px;
+}
+
+/* .cuscard-sm::before {
+    content: "";
+    position: absolute;
+    top: 0;bottom: 0; left: 0;right: 0;
+    background: var(--theme-color-4);
+    z-index: 1;
+}
+
+.cuscard-sm:hover::before {
+    top: 10px; left: -10px;
+    transform: translate(-10px, 10px);
+} */
+
