@@ -7,6 +7,17 @@
     --theme-color-3: #A8DADC;
     --theme-color-4: #457B9D;
     --theme-color-5: #1D3557;
+    --font: 'Josefin Sans', sans-serif;
+    --background-1 : linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+        background-blend-mode: multiply,multiply;
+    --background-2 : linear-gradient(to top, #dfe9f3 0%, white 100%);
+    --background-3 : linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+    --background-4 : linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+    --background-5 : linear-gradient(60deg, #29323c 0%, #485563 100%);
+    --background-6 : linear-gradient(121deg, #74EBD5 0%, #9FACE6 100%);
+    --background-7 : linear-gradient(123deg, #8EC5FC 0%, #E0C3FC 100%);
+
+
 }
 
 * {
@@ -30,28 +41,44 @@
     src: url(../font/svn-gilroy/SVN-Gilroy\ Light.otf);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
 html {
     font-size: 62.5%;
     line-height: 1.6rem;
-    font-family: text-font;
+    /* font-family: text-font; */
+    font-family: var(--font);
     box-sizing: border-box;
 }
 
-p {
-    font-family: text-font;
+p, a {
+    /* font-family: text-font; */
+    font-family: var(--font);
     color: #1D3557;
+    font-size: 16px;
 }
 
 h1,h2,h3,h4,h5 {
-    font-family: title-font;
+    /* font-family: title-font; */
+    font-family: var(--font);
     color: #1D3557;
 }
 
 body {
-    background: var(--theme-color-2) !important;
+    /* background: var(--theme-color-2) !important; */
     /* background: url('../img/pattern/cartographer/cartographer.png'); */
+    background: var(--background-2);
+    width: 100%;
+    user-select: none;
 }
 
+.fs-16 { font-size: 16px !important;}
+.fs-18 { font-size: 18px !important;}
+.fs-36 { font-size: 36px !important;}
 
 
 
@@ -91,4 +118,46 @@ body {
 .grid_row {
     display: flex;
     flex-wrap: wrap;
+}
+
+
+
+/* ------ Section --------- */
+
+section {
+    padding: 50px 0px;
+    box-sizing: border-box;
+}
+
+.section-header {
+    min-height: 120px;
+    text-align: center;
+    font-size: 36px;
+    font-family: var(--font);
+    letter-spacing: 2px;
+    /* font-family: 'Hahmlet', serif; */
+    /* font-family: 'Merriweather', serif; */
+    font-weight: bolder;
+    color: var(--theme-color-5);
+    position: relative;
+}
+
+
+.section-header p {
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.section-header::before {
+    content: "";
+    position: absolute;
+    top: 39%;
+    left: 40%; right: 100%;
+    height: 5px;
+    background:  var(--theme-color-1);
+    transition:  .5s;
+}
+
+.section-header:hover::before {
+    right: 40%;
 }

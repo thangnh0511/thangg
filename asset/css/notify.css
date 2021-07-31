@@ -24,6 +24,17 @@
     min-height: 200px;
     background: var(--theme-color-1);
     padding: 20px;
+    animation: openNotification .2s ease;
+}
+@keyframes openNotification {
+    from {
+        transform: translateY(-140px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .mn-box-content {
@@ -119,3 +130,4 @@
 .profile-btn:hover::before {
     transform: translate(-5px,5px);
 }
+
