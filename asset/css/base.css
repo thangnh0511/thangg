@@ -16,8 +16,23 @@
     --background-5 : linear-gradient(60deg, #29323c 0%, #485563 100%);
     --background-6 : linear-gradient(121deg, #74EBD5 0%, #9FACE6 100%);
     --background-7 : linear-gradient(123deg, #8EC5FC 0%, #E0C3FC 100%);
+    --background-8-winter-neva: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
 
+::-webkit-scrollbar-thumb {
+    background: var(--background-8-winter-neva);
+}
 
+.home-background {
+    background: #fff;
+}
+
+.background-winter-neva {
+    background: var(--background-8-winter-neva);
+}
+
+.background-7 {
+    background: var(--background-7);
 }
 
 * {
@@ -74,6 +89,14 @@ body {
     background: var(--background-2);
     width: 100%;
     user-select: none;
+}
+
+.px-10-p {
+    padding: 0px 10% !important;
+}
+
+.width-100 {
+    width: 100% !important;
 }
 
 .fs-16 { font-size: 16px !important;}
