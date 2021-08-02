@@ -15,7 +15,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-
     <!-- MODAL NOTIFICATION  -->
     <div  class=" modal-notify notify-hidden js-modalNotify">
         <div class="modal-notify-box col-11 col-sm-11 col-md-8 col-lg-4  col-xl-4">
@@ -61,7 +60,7 @@
         
             
             <div class="container my-5 px-10-p">
-                <div class="row">
+                <div class="intro-frame row">
                     <div class="intro-left col-12 col-md-4 col-xl-4 ">
                         <div class=" intro-text-body">
                             <h1>Who am I ?</h1>
@@ -73,7 +72,7 @@
                             </div>    
                         </a> 
                     </div>
-                    <div class="intro-right col-12 col-md-8 col-xl-8 ">
+                    <div class="intro-right col-12 col-md-6 col-xl-6 ">
                        <img src="./asset/img/home-img/dn.jpg" alt="">
                     </div>
                 </div>
@@ -86,27 +85,28 @@
             <div class="main">
                 <div class="container">
                     <div class="nav-out--list row justify-content-center">
-                        <div class="nav-out-item col-md-3">
+                        <div class="nav-out-item col-3 col-md-3">
                             <a href="">
                                 <i class="fas fa-shopping-bag"></i>
                                 <p>Shopping</p>
                             </a>
                         </div>
-                        <div class="nav-out-item col-md-3">
+                        <div class="nav-out-item col-3 col-md-3">
                             <a href="./blog.html">
                                 <i class="fas fa-newspaper"></i>
                                 <p>Blogs</p>
                             </a>
                         </div>
-                        <div class="nav-out-item col-md-3">
+                        <div class="nav-out-item col-3 col-md-3">
                             <a href="">
                                 <i class="fas fa-images"></i>
                                 <p>Gallery</p>
                             </a>
                         </div>
-                        <div class="nav-out-item col-md-3">
+                        <div class="nav-out-item col-3 col-md-3">
                             <a href="">
                                 <i class="fas fa-fighter-jet"></i>
+                                <i id="effect" class="fas fa-fighter-jet"></i>
                                 <p>Playground</p>
                             </a>
                         </div>
@@ -135,8 +135,14 @@
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quidem eveniet aspernatur tenetur. Unde eligendi nisi, porro inventore laudantium quis repudiandae, nam reprehenderit atque dolore ullam consectetur quo, alias odio.
                             </p>
+                            <a class="custom-btn my-5" href="./profile.html" target="__blank">
+                                <div class="btn-text">
+                                    Visit Blog
+                                </div>    
+                            </a> 
                         </div>
-                        <div class="topic-content-related m-5 p-2">
+                        
+                        <!-- <div class="topic-content-related m-5 p-2">
                             <div class="line"></div>
                             <div class="topic-header py-3">
                                 New Post
@@ -145,11 +151,7 @@
                                 <div class="topic-sub-header"><a href="https://design.google/library/people-products-epiphanies/">People, Products, and Epiphanies</a> </div>
                                 <p>Eureka moments don’t just happen—you have to cultivate them intentionally</p>
                             </div>
-                            <!-- <div class="new-topic">
-                                <div class="topic-sub-header"><a href="https://design.google/library/rule-of-three/">The “Rule of Three” Also Works in Conversation Design</a> </div>
-                                <p>Exploring the aesthetics and functionality of the rule of three in user interfaces</p>
-                            </div> -->
-                        </div>
+                        </div> -->
 
                     </div>
                 </div>
@@ -227,7 +229,7 @@
                     <p class="fs-18">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
                 </header>
                 <div class=" channel-content">
-                    <div class="channel-content--left col-md-6">
+                    <div class="channel-content--left col-md-5">
                         <div class="channel-content-new py-5">
                             <div class="topic-header py-3">
                                 My Youtube Channel
@@ -236,13 +238,13 @@
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quidem eveniet aspernatur tenetur. Unde eligendi nisi, porro inventore laudantium quis repudiandae, nam reprehenderit atque dolore ullam consectetur quo, alias odio.
                             </p>
                         </div>
-                        <a class="custom-btn my-5" href="https://www.youtube.com/channel/UCPq5o6Mbmy8P5zPvCF4DocA" target="__blank">
+                        <a class="custom-btn my-md-5" href="https://www.youtube.com/channel/UCPq5o6Mbmy8P5zPvCF4DocA" target="__blank">
                             <div class="btn-text">
                                 Visit channel
                             </div>
                         </a>
                     </div>
-                    <div class="channel-content--right col-md-6">
+                    <div class="channel-content--right mt-5 col-12 col-md-6">
                         <iframe src="https://www.youtube.com/embed/rhAdvLhaNdo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <!-- <img src="./asset/img/home-img/dn.jpg" alt=""> -->
                     </div>

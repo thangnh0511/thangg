@@ -17,14 +17,15 @@
     --background-6 : linear-gradient(121deg, #74EBD5 0%, #9FACE6 100%);
     --background-7 : linear-gradient(123deg, #8EC5FC 0%, #E0C3FC 100%);
     --background-8-winter-neva: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    --background-9-everlasting-sky: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--background-8-winter-neva);
+    background: var(--background-9-everlasting-sky);
 }
 
 .home-background {
-    background: #fff;
+    /* background: var(--background-2); */
 }
 
 .background-winter-neva {
