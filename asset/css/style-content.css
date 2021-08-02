@@ -244,6 +244,12 @@ nav {
     text-decoration: none;
 }
 
+.blog-post-group {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
 .blog-item-img {
     width: 300px;
     height: 200px;
