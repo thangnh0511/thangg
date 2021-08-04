@@ -18,6 +18,10 @@
     --background-7 : linear-gradient(123deg, #8EC5FC 0%, #E0C3FC 100%);
     --background-8-winter-neva: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
     --background-9-everlasting-sky: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    --background-10-saint-petersburg: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) !important;
+    --background-11-deep-blue: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    --background-12-fly-high: linear-gradient(135deg, #48c6ef 0%, #6f86d6 100%);
+    --background-13-strong-bliss: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -31,6 +35,19 @@
 .background-winter-neva {
     background: var(--background-8-winter-neva);
 }
+.bg-saint-petersburg {
+    background: var(--background-10-saint-petersburg);
+}
+.bg-deep-blue {
+    background: var(--background-11-deep-blue);
+}
+.bg-fly-high {
+    background: var(--background-12-fly-high);
+}
+.bg-strong-bliss {
+    background: var(--background-13-strong-bliss);
+}
+
 
 .background-7 {
     background: var(--background-7);
@@ -185,3 +202,4 @@ section {
 .section-header:hover::before {
     right: 40%;
 }
+

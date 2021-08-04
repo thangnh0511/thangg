@@ -257,6 +257,7 @@
 .nav-out-item:hover #effect {
     display: block;
     animation: imgIn linear 1s infinite ;
+
 }
 
 #effect{
@@ -500,8 +501,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    box-shadow: 0 -0.1875rem 0.125rem #efefef;
-    
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
 /* .footer::before {
