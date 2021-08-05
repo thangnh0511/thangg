@@ -183,7 +183,7 @@ audio:hover {
 
 .boost-item-quote {
     background: #494949;
-    width: 350px;
+    width: 100%;
     min-height: 20px;
     position: absolute;
     bottom: -60px;
