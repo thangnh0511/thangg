@@ -107,17 +107,17 @@ audio:hover {
 }
 
 .chill-background {
-    background-image: url('/asset/img/playground-img/chill-drink.jpeg');
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/personal-profile-32045.appspot.com/o/img%2Fchill-drink.jpeg?alt=media&token=234c1dad-b9a9-49a7-9c99-4938d4922942');
     background-position: center;
     background-size: cover;
 }
 .chill-background-2 {
-    background-image: url('/asset/img/playground-img/chill.jpg');
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/personal-profile-32045.appspot.com/o/img%2Fchill.jpg?alt=media&token=19b6902c-e4e3-465c-b0c0-9a5d1f9a6341');
     background-position: center;
     background-size: cover;
 }
 .chill-background-3 {
-    background-image: url('/asset/img/playground-img/chill-2.jpg');
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/personal-profile-32045.appspot.com/o/img%2Fchill-2.jpg?alt=media&token=7897f507-23c8-4057-b5dd-2f382e4ad7c0');
     background-position: center;
     background-size: cover;
 }
