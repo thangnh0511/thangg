@@ -1,7 +1,7 @@
 .app-main {
     width: 100%;
     min-height: 100vh;
-    background: var(--background-8);
+    /* background: var(--background-8); */
     z-index: -1;
 }    
     
