@@ -68,6 +68,143 @@
     box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
+.audio-play {
+    background: var(--background-10-saint-petersburg);
+    border-radius: 8px;
+    width: 100%;
+    height: 50px;
+}
+
+.music-item {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+    display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    transition: .5s;
+}
+
+.music-item:hover {
+    cursor: pointer;
+    height: 400px;
+}
+
+
+audio {
+    opacity: .7;
+    width: 40%;
+}
+
+audio:hover {
+    opacity: .95;
+}
+
+.background-audio {
+    width: 100px;
+}
+
+.chill-background {
+    background-image: url('/asset/img/playground-img/chill-drink.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+.chill-background-2 {
+    background-image: url('/asset/img/playground-img/chill.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.chill-background-3 {
+    background-image: url('/asset/img/playground-img/chill-2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.boost-bg {
+    background-image: url('/asset/img/playground-img/dont-givup-2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+
+.boost-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.boost-item {
+    /* padding: 20px; */
+    border-radius: 8px;
+    position: relative;
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.boost-item img, iframe {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: .5s;
+    
+}
+.boost-item audio {
+    position: absolute;
+    bottom: 0%;
+    left: 30%;
+    opacity: 0;
+    transition: .5s;
+}
+
+.boost-item-overlay {
+    background: #000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 8px;
+    opacity: 0;
+}
+
+.boost-item-quote {
+    background: #494949;
+    width: 350px;
+    min-height: 20px;
+    position: absolute;
+    bottom: -60px;
+    border-radius: 8px;
+    padding: 10px;
+    transition: .2s;
+    transform-origin: top right;
+    transform: scale(0,0);
+    z-index: 1;
+}
+
+/* .boost-item-quote::before {
+    content: "";
+    border: 20px solid;
+    border-color: transparent transparent #494949 transparent;
+    position: absolute;
+    top: -40%;
+    right: 10px;
+} */
+
+
+.boost-item:hover .boost-item-quote {
+    transform: scale(1,1);
+}
+
+.boost-item:hover audio{
+    bottom: 36%;
+    opacity: .9;
+}
+.boost-item:hover .boost-item-overlay {
+    opacity: .2;
+}
 
 
 
@@ -83,6 +220,9 @@
     .option-item {
         width: 380px;
         height: 40px;
+    }
+    .boost-item {
+        width: 465px;
     }
  }
 

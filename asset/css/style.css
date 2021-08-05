@@ -504,21 +504,4 @@
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
-/* .footer::before {
-    content: "";
-    position: absolute;
-    top: 0; bottom: 0; left: 0; right: 0;
-    background: url('../img/parttern.jpg') ;
-} */
-
-/* .background-pattern {
-    position: absolute;
-    top: 0; bottom: 0; left: 0; right: 0;
-    background: url("../img/pattern.svg") ;
-    background-size: cover; 
-    background-blend-mode: hard-light;
-    opacity: .2;
-} */
-
-
 
