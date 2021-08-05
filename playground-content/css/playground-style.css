@@ -3,7 +3,18 @@
     min-height: 100vh;
     /* background: var(--background-8); */
     z-index: -1;
+    animation: backgroundIn ease 1s;
+    animation-fill-mode: forwards;
 }    
+
+@keyframes backgroundIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
     
 .app-header {
     display: flex;
