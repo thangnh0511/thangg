@@ -150,7 +150,7 @@ audio:hover {
     /* padding: 20px; */
     border-radius: 8px;
     position: relative;
-    width: 100%;
+    width: 49%;
     margin: 20px 0px;
 }
 
@@ -174,7 +174,7 @@ audio:hover {
     background: #000;
     position: absolute;
     top: 0;
-    bottom: 0;
+    bottom: 4px;
     left: 0;
     right: 0;
     border-radius: 8px;
@@ -233,7 +233,7 @@ audio:hover {
         height: 40px;
     }
     .boost-item {
-        width: 465px;
+        /* width: 465px; */
     }
     .boost-item-quote {
         width: 100%;
@@ -244,15 +244,15 @@ audio:hover {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-
+    
  }
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-   
+    
  }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) { 
-  
+
  }
