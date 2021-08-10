@@ -22,6 +22,7 @@
     --background-11-deep-blue: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
     --background-12-fly-high: linear-gradient(135deg, #48c6ef 0%, #6f86d6 100%);
     --background-13-strong-bliss: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+    --background-14-glass-water: linear-gradient(to top, #dfe9f3 0%, white 100%);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -30,6 +31,10 @@
 
 .home-background {
     /* background: var(--background-2); */
+}
+
+.bg-glass-water {
+    background: var(--background-14-glass-water) !important;
 }
 
 .background-winter-neva {
@@ -98,7 +103,7 @@ html {
     box-sizing: border-box;
 }
 
-p, a {
+p, a, span {
     /* font-family: text-font; */
     font-family: var(--font);
     color: #1D3557;
@@ -211,5 +216,20 @@ section {
 
 .section-header:hover::before {
     right: 40%;
+}
+
+
+/* navbar button */
+.back-btn { 
+    text-decoration: none;
+    color: var(--theme-color-5);
+    font-size: 24px;
+    display: block;
+    width: 50px;
+}
+
+.back-btn:hover {
+    color: var(--theme-color-2);
+    cursor: pointer;
 }
 
