@@ -49,6 +49,8 @@
 }
 
 
+/* ---------- RESUME BODY ----------- */
+
 .resume-body {
     padding: 40px 20px 80px;
     width: 100%;
@@ -67,11 +69,37 @@
     justify-content: space-between;
 }
 
+.profile-avata {
+    flex-flow: column;
+}
+
 .profile-avata img {
     width: 90%;
     height: 90%;
     object-fit: cover;
+    align-self: center;
 }
+
+.status {
+    display: block;
+    width: 50%;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 8px;
+    align-self: center;
+}
+
+.st-available {
+    background: #7cd992;
+    color: #008000;
+}
+.st-working {
+    background: #eb6060;
+}
+.st-waiting {
+    background: #f7e463;
+}
+
 
 .profile-avata { 
     position: relative;
@@ -97,10 +125,10 @@
 }
 
 .resume__name {
-    font-size: 54px;
+    font-size: 48px;
     font-family: var(--font);
     font-weight: 900;
-
+    color: var(--theme-color-5);
 }
 
 
@@ -141,6 +169,7 @@
 .rsm-contact-item p{
     margin: 0;
     font-size: 14px;
+    color: var(--theme-color-5);
 }
 
 .rsm-contact-item::after {
@@ -206,7 +235,7 @@
 }
 
 .rsm__content-content {
-    padding: 14px;
+    padding: 14px 0px;
 }
 .rsm__content-content--title {
     margin-top: 20px;
