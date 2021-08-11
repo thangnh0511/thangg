@@ -67,6 +67,7 @@
 .resume-content-title {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .profile-avata {
@@ -194,6 +195,7 @@
 .resume-content-main {
     padding-top: 20px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .rsm__mainly_content {
