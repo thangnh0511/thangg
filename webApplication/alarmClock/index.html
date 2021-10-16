@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sleep Cycle</title>
+    <title>Thangg. | Sleep Cycle</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" type="image/png" href="https://firebasestorage.googleapis.com/v0/b/personal-profile-32045.appspot.com/o/img%2Flogo-2-1%20copy%202.png?alt=media&token=49e9ce8d-67a4-44d2-8255-46588fd7ec17">
+
 </head>
 <body>
     
     <div class="container">
+        <div class="information-box">
+            <h2 class="information-title">What Is the Sleep Cycle?</h2>
+            <p class="information-body">Sleep is not uniform. Instead, over the course of the night, your total sleep is made up of several rounds of the sleep cycle, which is composed of four individual stages. In a typical night, a person goes through four to six sleep cycles1. Not all sleep cycles are the same length, but on average they last about 90 minutes each.</p>
+            <a class="information-link" href="https://www.sleepfoundation.org/how-sleep-works/stages-of-sleep">Stages of Sleep          </a>
+        </div>
         <!-- Input Time -->
         <div class="value-box">
             <div class="input-data">
@@ -59,6 +66,7 @@
                     <div class="input">
                         <!-- <input type="text"> -->
                         <input type="text" placeholder="NUMBER" class="input-field desktop" id="cycle" readonly required>
+                        <label for="" class="mobile">Number</label>
                         <ul class="select-box" id="number-select-box">
                             <li class="option" onmouseenter="selectOption(4,1)">1</li>
                             <li class="option" onmouseenter="selectOption(4,2)">2</li>
@@ -84,7 +92,7 @@
         <!-- Value Time -->
         <div class="value-box">
             <div class="input-data">
-                <label for="hour" class="label">TIME TO WAKE UP</label>
+                <label for="hour" class="label">TIME TO AWAKE</label>
                 <div class="data-box result-area">
                     <div class="output-field desktop" id="outHour">Time</div>
                     <div class="output-field desktop" id="outMinute">To</div>
