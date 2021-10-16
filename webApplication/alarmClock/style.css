@@ -104,6 +104,7 @@ body {
     text-align: center;
     padding: 6px;
     font-weight: 500;
+    display: block;
 }
 .option:hover {
     background-color: #FFC288;
@@ -139,3 +140,6 @@ input {
 
 
 
+@media screen {
+    
+}
