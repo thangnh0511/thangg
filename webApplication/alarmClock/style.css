@@ -125,6 +125,13 @@ body {
     color: #345B63;
 }
 
+label {
+    margin-top: 4px;
+    font-size: 14px;
+    color: #345B63;
+    font-weight: 400;
+}
+
 .input-field:focus ~ .select-box {
     display: block;
 }
