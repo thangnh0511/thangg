@@ -5,10 +5,34 @@ const DATA_CONFIG = {
     1: ['hour',12],
     2: ['minute',60],
     3: ['period',['AM', 'PM']],
-    4: ['cycle', 90],
+    4: ['cycle', 6],
     5: ['period-mobile',['AM', 'PM']],
-    6: ['cycle-mobile', 90]
+    6: ['cycle-mobile', 6],
+    7: ['hour-mobile',12],
+    8: ['minute-mobile',60]
 }
+
+
+// Mobile selection
+function renderSelection() {
+    let msg = '';
+    for(i of DATA_CONFIG[5][1]){
+        msg += `<option value="${i}">${i}</option>`;
+    }
+    document.getElementById(DATA_CONFIG[5][0]).innerHTML = msg;
+
+    msg = '';
+
+    for(let i=6; i <= 8; i++){
+        for(let j=1 ; j<= DATA_CONFIG[i][1]; j++){
+            msg += `<option value="${j}">${j}</option>`;
+        }
+        document.getElementById(DATA_CONFIG[i][0]).innerHTML = msg;
+        msg = '';
+    }
+}
+
+renderSelection();
 
 function checkInput(id) {
     let input = +document.getElementById(DATA_CONFIG[id][0]).value;

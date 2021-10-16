@@ -16,15 +16,27 @@
                 <label for="hour" class="label">Enter Sleep Time</label>
                 <div class="data-box">
                     <div class="input">
-                        <input type="text" placeholder="HOUR" class="input-field" maxlength="2" id="hour" onkeyup="checkInput(1)" required >
+                        <input type="text" placeholder="HOUR" class="input-field desktop" maxlength="2" id="hour" onkeyup="checkInput(1)" required >
                         <!-- <ul class="select-box" id="hour-select-box">
                             <li class="option">1</li>
                             <li class="option">2</li>
                             <li class="option">3</li>
                         </ul> -->
+
+                        <!-- Mobile hour -->
+                        <label for="" class="mobile">Hour</label>
+                        <select name="" id="hour-mobile" class="input-field mobile" onkeyup="checkInput(7)" required>
+                          
+                        </select>
+
                     </div>
                     <div class="input">
-                        <input type="text" placeholder="MINUTE" class="input-field" maxlength="2" id="minute" onkeyup="checkInput(2)" required >
+                        <input type="text" placeholder="MINUTE" class="input-field desktop" maxlength="2" id="minute" onkeyup="checkInput(2)" required >
+                    
+                        <label for="" class="mobile">Minute</label>
+                        <select name="" id="minute-mobile" class="input-field mobile" onkeyup="checkInput(8)" required>
+                           
+                        </select>
                     </div>
                     <div class="input">
                         <input type="text" placeholder="PERIOD" class="input-field desktop" id="period" onkeyup="alternateInput()" readonly required>
@@ -33,9 +45,10 @@
                             <li class="option" onmouseenter="selectOption(3,'PM')">PM</li>
                         </ul>
 
+                        <!-- Mobile Period -->
+                        <label for="period-mobile" class="mobile">Period</label>
                         <select name="" id="period-mobile" class="input-field mobile" onclick="mobileSelect(5)" required>
-                            <option value="AM">AM</option>
-                            <option value="PM">PM</option>
+
                         </select>
                     </div>
                 </div>
@@ -56,12 +69,12 @@
                         </ul>
 
                         <select name="" id="cycle-mobile" class="input-field mobile" onclick="mobileSelect(6)" required>
-                            <option value="1">1</option>
+                            <!-- <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
                             <option value="5">5</option>
-                            <option value="6">6</option>
+                            <option value="6">6</option> -->
                         </select>
                     </div>
                 </div>
