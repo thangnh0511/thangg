@@ -12,7 +12,8 @@
     --color-primary : #0F00FF;
     --color-secondary-1: #1597E5;
     --color-secondary-2: #09009B;
-    --color-other-1: #FFA400;
+    /* --color-other-1: #FFA400; */
+    --color-other-1: #77ACF1;
     --white-color: #fff;
     --back-color: #000;
     --background-1: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
@@ -56,6 +57,7 @@ body {
     /* background-color: #FF8882; */
     border-bottom: 4px solid var(--white-color);
     margin-top: 10px;
+    border-radius: 8px;
     
     display: flex;
     justify-content: space-around;
@@ -83,6 +85,14 @@ body {
     text-align: center;
     font-weight: 500;
     color: #345B63;
+}
+
+.result-area {
+    background: #000000;
+    border-bottom: 4px solid #F05454;
+}
+.result-area > .output-field {
+    color: #C0FEFC;
 }
 
 .select-box {
