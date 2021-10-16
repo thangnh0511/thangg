@@ -27,11 +27,16 @@
                         <input type="text" placeholder="MINUTE" class="input-field" maxlength="2" id="minute" onkeyup="checkInput(2)" required >
                     </div>
                     <div class="input">
-                        <input type="text" placeholder="PERIOD" class="input-field" id="period" onkeyup="alternateInput()" readonly required>
+                        <input type="text" placeholder="PERIOD" class="input-field desktop" id="period" onkeyup="alternateInput()" readonly required>
                         <ul class="select-box" id="period-select-box">
-                            <a class="option" onmouseenter="selectOption(3,'AM')">AM</a>
-                            <a class="option" onmouseenter="selectOption(3,'PM')">PM</a>
+                            <li class="option" onmouseenter="selectOption(3,'AM')">AM</li>
+                            <li class="option" onmouseenter="selectOption(3,'PM')">PM</li>
                         </ul>
+
+                        <select name="" id="period-mobile" class="input-field mobile" onclick="mobileSelect(5)" required>
+                            <option value="AM">AM</option>
+                            <option value="PM">PM</option>
+                        </select>
                     </div>
                 </div>
             </div>
@@ -40,16 +45,24 @@
                 <div class="data-box">
                     <div class="input">
                         <!-- <input type="text"> -->
-                        <input type="text" placeholder="NUMBER" class="input-field" id="cycle" readonly required>
+                        <input type="text" placeholder="NUMBER" class="input-field desktop" id="cycle" readonly required>
                         <ul class="select-box" id="number-select-box">
-                            <a class="option" onmouseenter="selectOption(4,1)">1</a>
-                            <a class="option" onmouseenter="selectOption(4,2)">2</a>
-                            <a class="option" onmouseenter="selectOption(4,3)">3</a>
-                            <a class="option" onmouseenter="selectOption(4,4)">4</a>
-                            <a class="option" onmouseenter="selectOption(4,5)">5</a>
-                            <a class="option" onmouseenter="selectOption(4,6)">6</a>
-
+                            <li class="option" onmouseenter="selectOption(4,1)">1</li>
+                            <li class="option" onmouseenter="selectOption(4,2)">2</li>
+                            <li class="option" onmouseenter="selectOption(4,3)">3</li>
+                            <li class="option" onmouseenter="selectOption(4,4)">4</li>
+                            <li class="option" onmouseenter="selectOption(4,5)">5</li>
+                            <li class="option" onmouseenter="selectOption(4,6)">6</li>
                         </ul>
+
+                        <select name="" id="cycle-mobile" class="input-field mobile" onclick="mobileSelect(6)" required>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
                     </div>
                 </div>
             </div>
@@ -60,9 +73,13 @@
             <div class="input-data">
                 <label for="hour" class="label">TIME TO WAKE UP</label>
                 <div class="data-box">
-                    <div class="output-field" id="outHour">Time</div>
-                    <div class="output-field" id="outMinute">To</div>
-                    <div class="output-field" id="outPeriod">Awake</div>
+                    <div class="output-field desktop" id="outHour">Time</div>
+                    <div class="output-field desktop" id="outMinute">To</div>
+                    <div class="output-field desktop" id="outPeriod">Awake</div>
+
+                    <div class="output-field mobile" id="outHour-mobile">Time</div>
+                    <div class="output-field mobile" id="outMinute-mobile">To</div>
+                    <div class="output-field mobile" id="outPeriod-mobile">Awake</div>
 
                     <!-- <input type="text" placeholder="HOUR" class="input-field" readonly>
                     <input type="text" placeholder="MINUTE" class="input-field" readonly>

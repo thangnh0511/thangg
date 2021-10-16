@@ -5,7 +5,9 @@ const DATA_CONFIG = {
     1: ['hour',12],
     2: ['minute',60],
     3: ['period',['AM', 'PM']],
-    4: ['cycle', 90]
+    4: ['cycle', 90],
+    5: ['period-mobile',['AM', 'PM']],
+    6: ['cycle-mobile', 90]
 }
 
 function checkInput(id) {
@@ -33,12 +35,14 @@ function checkInput(id) {
 function alternateInput() {
     let hour = +document.getElementById('hour').value;
     let period = document.getElementById('period').value;
+    let periodMobile = document.getElementById('period-mobile').value;
     let min = document.getElementById('minute').value;
 
-    if(period === 'PM'){
+    if(period === 'PM' || periodMobile === 'PM'){
         if(hour == 12) {
             document.getElementById('hour').value = 0;
             document.getElementById('period').value = 'AM';
+            document.getElementById('period-mobile').value = 'AM';
         } else if(hour == 0) {
             document.getElementById('hour').value = 1;
         }
@@ -49,6 +53,8 @@ function alternateInput() {
         document.getElementById('hour').value = null;
         document.getElementById('minute').value = null;
         document.getElementById('period').value = null;
+        document.getElementById('period-mobile').value = null;
+
     }
 }
 
@@ -60,9 +66,12 @@ function timeCalc(){
     let period = document.getElementById('period').value;
     let cycle = +document.getElementById('cycle').value;
 
+    let periodMobile = document.getElementById('period-mobile').value;
+    let cycleMobile = +document.getElementById('cycle-mobile').value;
+
     clearDisplay();
     
-    let alarm = alarmTime(hour, min, period, cycle);
+    let alarm = alarmTime(hour, min, period, cycle, periodMobile, cycleMobile);
 
 
     console.log(alarm);
@@ -75,12 +84,35 @@ function timeCalc(){
 
 }
 
+
+function timeCalcForMobile(){
+    let hour = +document.getElementById('hour').value;
+    let min = +document.getElementById('minute').value;
+    let periodMobile = document.getElementById('period-mobile').value;
+    let cycleMobile = +document.getElementById('cycle-mobile').value;
+
+    clearDisplay();
+    
+    let alarm = alarmTime(hour, min, periodMobile, cycleMobile);
+
+
+    console.log(alarm);
+
+    console.log(alarm[2]);
+
+    document.getElementById('outHour-mobile').innerHTML = alarm[0];
+    document.getElementById('outMinute-mobile').innerHTML = alarm[1];
+    document.getElementById('outPeriod-mobile').innerHTML = alarm[2];
+
+}
+
 function alarmTime(hour,min,period,cycle) {
     let alarmHour;
     let alarmMin;
     let alarmPeriod = period; 
     let alarmCycle = cycle*1.5; 
 
+    //Desktop 
     alarmMin = (alarmCycle - Math.floor(alarmCycle))*60 + min;
     let time =  (Math.floor(alarmCycle) + hour) - 12;
 
@@ -104,9 +136,38 @@ function alarmTime(hour,min,period,cycle) {
     console.log('Alarm Period  - '+ alarmPeriod);
 
 
+    return [alarmHour, alarmMin, alarmPeriod];
+}
 
+function alarmTimeForMobile(hour,min,period,cycle) {
+    let alarmHour;
+    let alarmMin;
+    let alarmPeriod = period; 
+    let alarmCycle = cycle*1.5; 
 
-    
+    //Desktop 
+    alarmMin = (alarmCycle - Math.floor(alarmCycle))*60 + min;
+    let time =  (Math.floor(alarmCycle) + hour) - 12;
+
+    if(time <= 0) {
+        alarmHour = 12 + time;
+    } else if(time > 0 && period === 'PM') {
+        alarmHour = time;
+        alarmPeriod = 'AM';
+    } else if(time > 0 && period === 'AM') {
+        alarmHour = time;
+        alarmPeriod = 'PM';
+    }
+
+    console.log('hour   - '+ hour);
+    console.log('minus  - '+ min);
+    console.log('period - '+ period);
+    console.log('cycle  - '+ alarmCycle + ' - ' +Math.floor(alarmCycle));
+    console.log('Alarm Time  - '+ time);
+    console.log('Alarm Hour  - '+ alarmHour);
+    console.log('Alarm Minu  - '+ alarmMin);
+    console.log('Alarm Period  - '+ alarmPeriod);
+
 
     return [alarmHour, alarmMin, alarmPeriod];
 }
@@ -121,6 +182,12 @@ function clearDisplay() {
 function selectOption(id, value) {
     let dataId = DATA_CONFIG[id][0];
     document.getElementById(dataId).value = value;
+    console.log('****')
     timeCalc();
+    alternateInput();
+}
+
+function mobileSelect(id) {
+    timeCalcForMobile();
     alternateInput();
 }

@@ -134,12 +134,24 @@ body {
 }
 
 
-input {
+select,input {
     outline:none;
 }
 
 
-
-@media screen {
-    
+.mobile {
+    display: none;
 }
+
+.desktop {
+    display: block;
+}
+
+@media only screen and (max-width: 1023px) {
+    .mobile{
+        display: block;
+    }
+    .desktop {
+        display: none;
+    }
+  }
