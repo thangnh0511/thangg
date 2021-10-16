@@ -101,7 +101,7 @@ body {
 
 .option {
     margin-top: 6px;
-    text-align: center;
+    text-align: -webkit-center;
     padding: 6px;
     font-weight: 500;
     display: block;
@@ -119,7 +119,7 @@ body {
 .output-field {
     /* line-height: 48px; */
     font-size: 28px;
-    text-align: center;
+    text-align: -webkit-center;
     align-self: center;
     user-select: none;
     color: #345B63;
@@ -143,6 +143,8 @@ label {
 
 select,input {
     outline:none;
+    text-align: -webkit-center;
+
 }
 
 

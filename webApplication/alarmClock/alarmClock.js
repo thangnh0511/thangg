@@ -13,26 +13,7 @@ const DATA_CONFIG = {
 }
 
 
-// Mobile selection
-function renderSelection() {
-    let msg = '';
-    for(i of DATA_CONFIG[5][1]){
-        msg += `<option value="${i}">${i}</option>`;
-    }
-    document.getElementById(DATA_CONFIG[5][0]).innerHTML = msg;
 
-    msg = '';
-
-    for(let i=6; i <= 8; i++){
-        for(let j=1 ; j<= DATA_CONFIG[i][1]; j++){
-            msg += `<option value="${j}">${j}</option>`;
-        }
-        document.getElementById(DATA_CONFIG[i][0]).innerHTML = msg;
-        msg = '';
-    }
-}
-
-renderSelection();
 
 function checkInput(id) {
     let input = +document.getElementById(DATA_CONFIG[id][0]).value;
@@ -109,26 +90,7 @@ function timeCalc(){
 }
 
 
-function timeCalcForMobile(){
-    let hour = +document.getElementById('hour').value;
-    let min = +document.getElementById('minute').value;
-    let periodMobile = document.getElementById('period-mobile').value;
-    let cycleMobile = +document.getElementById('cycle-mobile').value;
 
-    clearDisplay();
-    
-    let alarm = alarmTime(hour, min, periodMobile, cycleMobile);
-
-
-    console.log(alarm);
-
-    console.log(alarm[2]);
-
-    document.getElementById('outHour-mobile').innerHTML = alarm[0];
-    document.getElementById('outMinute-mobile').innerHTML = alarm[1];
-    document.getElementById('outPeriod-mobile').innerHTML = alarm[2];
-
-}
 
 function alarmTime(hour,min,period,cycle) {
     let alarmHour;
@@ -163,6 +125,108 @@ function alarmTime(hour,min,period,cycle) {
     return [alarmHour, alarmMin, alarmPeriod];
 }
 
+
+
+function clearDisplay() {
+    document.getElementById('outHour').innerHTML = null;
+    document.getElementById('outMinute').innerHTML = null;
+    document.getElementById('outPeriod').innerHTML = null;
+}
+
+
+function selectOption(id, value) {
+    let dataId = DATA_CONFIG[id][0];
+    document.getElementById(dataId).value = value;
+    console.log('****')
+    timeCalc();
+    alternateInput();
+}
+
+
+
+
+
+
+// MOBILE FUNCTION
+
+function renderSelection() {
+    let msg = '';
+    for(i of DATA_CONFIG[5][1]){
+        msg += `<option value="${i}">${i}</option>`;
+    }
+    document.getElementById(DATA_CONFIG[5][0]).innerHTML = msg;
+
+    msg = '';
+
+    for(let i=6; i <= 8; i++){
+        for(let j=0 ; j<= DATA_CONFIG[i][1]; j++){
+            msg += `<option value="${j}">${j}</option>`;
+        }
+        document.getElementById(DATA_CONFIG[i][0]).innerHTML = msg;
+        msg = '';
+    }
+}
+
+renderSelection();
+
+
+function checkInputMobile(id) {
+    let input = +document.getElementById(DATA_CONFIG[id][0]).value;
+    
+    
+    if(id == 8) {
+        if(input == 60){
+            document.getElementById('hour-mobile').value ++; 
+            input = 0;
+        }
+    }
+    document.getElementById(DATA_CONFIG[id][0]).value = input;
+}
+
+function alternateInputMobile() {
+    let hour = +document.getElementById('hour-mobile').value;
+    let period = document.getElementById('period-mobile').value;
+    let min = document.getElementById('minute-mobile').value;
+
+    if(period === 'PM'){
+        if(hour == 12) {
+            document.getElementById('hour-mobile').value = 0;
+            document.getElementById('period-mobile').value = 'AM';
+        } else if(hour == 0) {
+            document.getElementById('hour-mobile').value = 1;
+        }
+    }
+
+    if(hour > 12) {
+        confirm('Out of Range !!! \nResubmit Please');
+        document.getElementById('hour-mobile').value = null;
+        document.getElementById('minute-mobile').value = null;
+        document.getElementById('period-mobile').value = null;
+    }
+}
+
+function timeCalcForMobile(){
+    let hour = +document.getElementById('hour-mobile').value;
+    let min = +document.getElementById('minute-mobile').value;
+    let periodMobile = document.getElementById('period-mobile').value;
+    let cycleMobile = +document.getElementById('cycle-mobile').value;
+
+    clearDisplay();
+    
+    let alarm = alarmTimeForMobile(hour, min, periodMobile, cycleMobile);
+
+
+    console.log(alarm);
+
+    console.log(alarm[2]);
+
+    document.getElementById('outHour-mobile').innerHTML = alarm[0];
+    document.getElementById('outMinute-mobile').innerHTML = alarm[1];
+    document.getElementById('outPeriod-mobile').innerHTML = alarm[2];
+
+}
+
+
 function alarmTimeForMobile(hour,min,period,cycle) {
     let alarmHour;
     let alarmMin;
@@ -196,22 +260,7 @@ function alarmTimeForMobile(hour,min,period,cycle) {
     return [alarmHour, alarmMin, alarmPeriod];
 }
 
-function clearDisplay() {
-    document.getElementById('outHour').innerHTML = null;
-    document.getElementById('outMinute').innerHTML = null;
-    document.getElementById('outPeriod').innerHTML = null;
-}
-
-
-function selectOption(id, value) {
-    let dataId = DATA_CONFIG[id][0];
-    document.getElementById(dataId).value = value;
-    console.log('****')
-    timeCalc();
-    alternateInput();
-}
-
 function mobileSelect(id) {
     timeCalcForMobile();
-    alternateInput();
+    alternateInputMobile();
 }
