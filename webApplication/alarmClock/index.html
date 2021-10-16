@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleep Cycle</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <!-- Input Time -->
+        <div class="value-box">
+            <div class="input-data">
+                <label for="hour" class="label">Enter Sleep Time</label>
+                <div class="data-box">
+                    <div class="input">
+                        <input type="text" placeholder="HOUR" class="input-field" maxlength="2" id="hour" onkeyup="checkInput(1)" required >
+                        <!-- <ul class="select-box" id="hour-select-box">
+                            <li class="option">1</li>
+                            <li class="option">2</li>
+                            <li class="option">3</li>
+                        </ul> -->
+                    </div>
+                    <div class="input">
+                        <input type="text" placeholder="MINUTE" class="input-field" maxlength="2" id="minute" onkeyup="checkInput(2)" required >
+                    </div>
+                    <div class="input">
+                        <input type="text" placeholder="PERIOD" class="input-field" id="period" onkeyup="alternateInput()" readonly required>
+                        <ul class="select-box" id="period-select-box">
+                            <li class="option" onmouseenter="selectOption(3,'AM')">AM</li>
+                            <li class="option" onmouseenter="selectOption(3,'PM')">PM</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="input-data">
+                <label for="number" class="label">Cycle</label>
+                <div class="data-box">
+                    <div class="input">
+                        <!-- <input type="text"> -->
+                        <input type="text" placeholder="NUMBER" class="input-field" id="cycle" readonly required>
+                        <ul class="select-box" id="number-select-box">
+                            <li class="option" onmouseenter="selectOption(4,1)">1</li>
+                            <li class="option" onmouseenter="selectOption(4,2)">2</li>
+                            <li class="option" onmouseenter="selectOption(4,3)">3</li>
+                            <li class="option" onmouseenter="selectOption(4,4)">4</li>
+                            <li class="option" onmouseenter="selectOption(4,5)">5</li>
+                            <li class="option" onmouseenter="selectOption(4,6)">6</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Value Time -->
+        <div class="value-box">
+            <div class="input-data">
+                <label for="hour" class="label">TIME TO WAKE UP</label>
+                <div class="data-box">
+                    <div class="output-field" id="outHour">Time</div>
+                    <div class="output-field" id="outMinute">To</div>
+                    <div class="output-field" id="outPeriod">Awake</div>
+
+                    <!-- <input type="text" placeholder="HOUR" class="input-field" readonly>
+                    <input type="text" placeholder="MINUTE" class="input-field" readonly>
+                    <input type="text" placeholder="PERIOD" class="input-field" readonly> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./alarmClock.js"></script>
+</body>
+</html>

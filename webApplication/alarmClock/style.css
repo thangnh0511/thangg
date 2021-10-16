@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Varela+Round&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Varela Round', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+:root {
+    --color-primary : #0F00FF;
+    --color-secondary-1: #1597E5;
+    --color-secondary-2: #09009B;
+    --color-other-1: #FFA400;
+    --white-color: #fff;
+    --back-color: #000;
+    --background-1: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+
+body {
+    background-image: var(--background-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {    
+    width: 500px;
+    height: 300px;
+    /* background-color: var(--color-secondary-1); */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.label {
+    color: var(--white-color);
+    font-size: 38px;
+}
+
+.value-box {
+    width: 100%;
+    margin-top: 40px;
+    /* background-color: var(--color-secondary-1); */
+    display: flex;
+    /* grid-template-columns: 2fr 1fr; */
+    justify-content: space-between;
+}
+
+.data-box{
+    width: 100%;
+    height: 48px;
+    background-color: var(--color-other-1);
+    /* background-color: #FF8882; */
+    border-bottom: 4px solid var(--white-color);
+    margin-top: 10px;
+    
+    display: flex;
+    justify-content: space-around;
+}
+
+.input{
+    align-self: center;
+    position: relative;
+}
+
+
+.input-field, .output-field {
+    flex-basis: 1;
+    width: 98px;
+    background-color: transparent;
+    border: none;
+    outline-color: unset;
+    outline-offset: unset;
+    font-size: 18px;
+    font-weight: 400;
+    /* border-right: 2px solid var(--white-color); */
+    height: 30px;
+    align-self: center;
+    position: relative;
+    text-align: center;
+    font-weight: 500;
+    color: #345B63;
+}
+
+.select-box {
+    width: 80px;
+    position: absolute;
+    min-height: 50px;
+    border-radius: 4px;
+    background-color: var(--white-color);
+    padding: 10px 6px;
+    z-index: 1;
+    list-style: none;
+    top: 50px;
+    display: none;
+}
+
+
+.option {
+    margin-top: 6px;
+    text-align: center;
+    padding: 6px;
+    font-weight: 500;
+}
+.option:hover {
+    background-color: #FFC288;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.input-field:last-child , .output-field:last-child {
+    border: none;
+}
+
+.output-field {
+    /* line-height: 48px; */
+    font-size: 28px;
+    text-align: center;
+    align-self: center;
+    user-select: none;
+    color: #345B63;
+}
+
+.input-field:focus ~ .select-box {
+    display: block;
+}
+
+#cycle {
+    text-align: center;
+}
+
+
+input {
+    outline:none;
+}
+
+
+
