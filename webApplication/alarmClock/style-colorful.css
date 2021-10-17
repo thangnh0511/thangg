@@ -44,6 +44,18 @@ body {
     box-sizing: border-box;
 }
 
+.webAppTitle {
+    font-size: 38px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin: 0px 0px 40px;
+    padding-bottom: 14px;
+    color: var(--white-color);
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid var(--white-color);
+}
+
 .information-box {
     width: 100%;
     padding: 20px;
