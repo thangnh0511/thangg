@@ -93,6 +93,7 @@ body {
     display: flex;
     justify-content: space-around;
 }
+ 
 
 .input{
     align-self: center;
@@ -185,7 +186,6 @@ label {
 select,input {
     outline:none;
     text-align: -webkit-center;
-
 }
 
 
@@ -206,5 +206,9 @@ select,input {
     }
     .desktop {
         display: none;
+    }
+
+    .data-box {
+        height: 56px;
     }
   }
