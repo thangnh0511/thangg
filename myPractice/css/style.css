@@ -114,8 +114,7 @@
 @media screen and (max-width: 445px){
 
     body {
-        padding: 0px 14px;
-        overflow: hidden;
+        width: 100vw;
     }
 
     .search-box {
@@ -128,6 +127,13 @@
         width: 80%;
         margin: 0 14px;
 
+    }
+
+    .img-box {
+        max-width: 280px;
+    }
+    .img-box:hover {
+        transform: scale(1,1);
     }
 
 }
