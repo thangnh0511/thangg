@@ -120,7 +120,7 @@ function renderCommon(data, name ,id) {
             let tempArray = subCate.description
             dom +=`<div class="rsm2_font__subTitle2">${subCate.sub_category}</div><ul>`
                 for(let index = 0; index < tempArray.length; index++) {
-                    dom += `<li>${tempArray[index]}</li>`
+                    dom += `<li class="fs-16">${tempArray[index]}</li>`
                 }
                 dom += `</ul>`
             console.log(subCate.description)
@@ -131,7 +131,7 @@ function renderCommon(data, name ,id) {
             let tempArray = subCate.description
             dom +=`<ul>`
                 for(let index = 0; index < tempArray.length; index++) {
-                    dom += `<li>${tempArray[index]}</li>`
+                    dom += `<li class="fs-16">${tempArray[index]}</li>`
                 }
                 dom += `</ul>`
             console.log(subCate.description)

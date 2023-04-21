@@ -45,7 +45,57 @@
     cursor: pointer;
 }
 
+.tab-btn {
+    color: var(--white-color);
+    border: 2.5px solid #000;
+    display: block;
+    font-size: 20px;
+    width: 150px;
+    padding: 5px 5px;
+    margin: 5px;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex; 
+        align-items: center;
+        justify-content: space-around;
+    transition: .4s;
+}
 
+
+.tab-block {
+    display: flex;
+    flex-direction: row;
+}
+
+.tab-btn i {
+    font-size: 18px;
+}
+.tab-btn {
+    margin: 10px;
+    line-height: 22px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: var(--black-color);
+}
+
+.tab-btn:hover i,
+.tab-btn:hover p {
+    color: var(--white-color);
+}
+
+.tab-btn:hover{
+    background: var(--black-color);
+    border: 2.5px solid #000;
+    color: var(--white-color);
+    /* width: 170px;     */
+}
+
+.btn__active {
+    background-color: var(--black-color);
+    color: var(--white-color) !important;
+}
 
 .flex-box {
     flex-grow: 2 !important;

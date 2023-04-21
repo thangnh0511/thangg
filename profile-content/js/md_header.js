@@ -54,7 +54,8 @@ function loadingHeader() {
         </div>
     </div>
     <a href="https://firebasestorage.googleapis.com/v0/b/personal-profile-32045.appspot.com/o/pdf%2FNGUYEN%20HUU%20THANG.pdf?alt=media&token=dc9017cb-e87d-4aaf-a08c-7358df287b6a" class="download-btn black-color"> 
-        <i class="fas fa-file-download"></i>
+        <!-- <i class="fas fa-file-download"></i> -->
+        <i class="fa-solid fas fa-download"></i>
         <p>Download</p>
     </a>
     `

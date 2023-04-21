@@ -5,6 +5,29 @@
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 300px) and (max-width: 575px) { 
 
+    .tabs {
+        position: -webkit-sticky !important;
+        position: fixed !important;
+        z-index: 10;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        justify-content:space-around;
+        padding: 10px;
+        border-top-right-radius: 24px;
+        border-top-left-radius: 24px;
+        background-color: var(--white-color);
+        box-shadow: var(--boxShadow-material-1);
+    }
+
+    .tab-item {
+        font-size: 12px !important;
+        padding: 10px !important;
+    }
+    .tab-icon {
+        font-size: 14px;
+    }
+
     #_001-h {
         justify-content: center;
     }
@@ -22,8 +45,13 @@
         display: none;
     }
 
+    .download-btn p {
+        font-size: 10px !important;
+    }
+
     .download-btn i{
         margin: 0 8px 0 2px;
+        font-size: 14px !important;
     }
 
     .resume__jobTitle {
@@ -39,7 +67,7 @@
 }
 
 
-@media (min-width: 576px) { 
+@media (min-width: 576px) and (max-width: 765px) { 
     #title-header {
         width: 316px;
     }
@@ -62,6 +90,30 @@
         border-radius: 8px;
     
     }
+
+    .tabs {
+        position: -webkit-sticky !important;
+        position: fixed !important;
+        z-index: 10;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        justify-content:space-around;
+        padding: 10px;
+        border-top-right-radius: 24px;
+        border-top-left-radius: 24px;
+        background-color: var(--white-color);
+        box-shadow: var(--boxShadow-material-1);
+    }
+
+    .tab-item {
+        font-size: 12px !important;
+        padding: 10px !important;
+    }
+    .tab-icon {
+        font-size: 14px;
+    }
+
 
 }
 
@@ -90,6 +142,10 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
+    .tabs {
+        justify-content: left;
+    }
+
     .px-md-10-p {
         padding: 0px 10% !important;
     }

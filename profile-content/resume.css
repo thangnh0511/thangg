@@ -3,6 +3,11 @@
 
 /* .resume-main {} */
 
+.sticky {
+    position: sticky;
+    top: 10;
+}
+
 .resume-header { 
     margin-top: 10px;
     height: 48px;
