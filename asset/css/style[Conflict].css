@@ -222,7 +222,7 @@ a:hover { color: black !important;}
 .footer {
     height: 300px;
     width: 100%;
-    background: var(--theme-color-5) ;
+    /* background: var(--theme-color-5) ; */
     position: relative;
 }
 

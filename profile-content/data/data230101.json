@@ -1,0 +1,372 @@
+{
+    "personal":[
+     {
+      "id": 1,
+      "name": "Nguyen Huu Thang",
+      "position": "IT Business Analyst ",
+      "status": "open",
+      "address": "Da Nang city",
+      "phoneNumber": "0906401845",
+      "email": "thangnh0511@gmail.com",
+      "linkedin": "www.linkedin.com\/in\/thang-nh",
+      "lastUpdate": "18\/04\/2023"
+     },
+     {
+      "id": 2,
+      "name": "Mai Tuong Vy",
+      "position": "Korean",
+      "status": "closed",
+      "address": "Da Nang city",
+      "phoneNumber": "0334488178"
+     }
+    ],
+    "summary":[
+     {
+      "personal_ID": 1,
+      "category": "summary",
+      "description": "As an experienced IT Business Analyst, I have spent the last 4 years working with both product companies and outsourcing firms, honing my skills in project management, requirements gathering, and stakeholder communication. However, what truly sets me apart is my passion for UX\/UI design and my strong background in software and data. I am constantly seeking new ways to enhance user experiences and streamline processes through innovative design and data-driven insights. With my diverse skill set and passion for technology, I am confident in my ability to make a significant contribution to any organization."
+     },
+     {
+      "personal_ID": 1,
+      "category": "certification",
+      "description": "PSPO I - 2023"
+     },
+     {
+      "personal_ID": 1,
+      "category": "certification",
+      "description": "FPT Academy - BA Foundation - 2023"
+     },
+     {
+      "personal_ID": 1,
+      "category": "certification",
+      "description": "TOEIC - 2022"
+     },
+     {
+      "personal_ID": 1,
+      "category": "certification",
+      "description": "Google UX Design Professional - 2022"
+     },
+     {
+      "personal_ID": 1,
+      "category": "certification",
+      "description": "Codegym - JavaScript - 2022"
+     },
+     {
+      "personal_ID": 1,
+      "category": "certification",
+      "description": "Codegym - HTML\/CSS - 2022"
+     },
+     {
+      "personal_ID": 1,
+      "category": "certification",
+      "description": "MOS Excel 2023 Specialist - 2017"
+     },
+     {
+      "personal_ID": 1,
+      "category": "technical",
+      "sub_category": "Management & Design Tool",
+      "description": "Jira & Confluence"
+     },
+     {
+      "personal_ID": 1,
+      "category": "technical",
+      "sub_category": "Management & Design Tool",
+      "description": "Balsamiq, Figma, Adobe XD"
+     },
+     {
+      "personal_ID": 1,
+      "category": "technical",
+      "sub_category": "Management & Design Tool",
+      "description": "Draw.io, MS Visio, Miro"
+     },
+     {
+      "personal_ID": 1,
+      "category": "technical",
+      "sub_category": "Management & Design Tool",
+      "description": "Adobe Creative Suite"
+     },
+     {
+      "personal_ID": 1,
+      "category": "technical",
+      "sub_category": "Management & Design Tool",
+      "description": "Business Process Model & Notation (BPMN)"
+     },
+     {
+      "personal_ID": 1,
+      "category": "technical",
+      "sub_category": "Database",
+      "description": "MS SQL Server, Oracle"
+     },
+     {
+      "personal_ID": 1,
+      "category": "technical",
+      "sub_category": "Programing",
+      "description": "HTML\/CSS, JavaScript, ReactJS"
+     },
+     {
+      "personal_ID": 1,
+      "category": "technical",
+      "sub_category": "Programing",
+      "description": "Python"
+     },
+     {
+      "personal_ID": 1,
+      "category": "hobbies",
+      "description": "Running"
+     },
+     {
+      "personal_ID": 1,
+      "category": "hobbies",
+      "description": "Playing guitar"
+     },
+     {
+      "personal_ID": 1,
+      "category": "hobbies",
+      "description": "Reading books"
+     },
+     {
+      "personal_ID": 1,
+      "category": "hobbies",
+      "description": "Traveling"
+     },
+     {
+      "personal_ID": 1,
+      "category": "hobbies",
+      "description": "Coding"
+     },
+     {
+      "personal_ID": 1,
+      "category": "hobbies",
+      "description": "Garden"
+     },
+     {
+      "personal_ID": 1,
+      "category": "Languages",
+      "sub_category": "english",
+      "description": "TOEIC - 765 Score"
+     }
+    ],
+    "experience":[
+     {
+      "personal_ID": 1,
+      "time": "2021 - Current",
+      "job_title": "IT Business Analyst",
+      "company": "FPT Software, Da Nang",
+      "description": "I improved my mindset and technical knowledge a lot when working at my present company. There were various challenges when working on outsourcing projects for client came from abroad. At last, I found myself really like this job and ready for new challenges\n- Gather requirements\n- Communicate and validate requirements with stakeholders\n- Write User Story, Use Case, FSD, SRS\n- Analyze Data and writing query script.\n- Coordinate with different teams to ensure the quality of outcomes \n- Plan and Organize schedule to ensure launch on time along the Project roadmap\n- Support in testing, verifying bugs or issues with client"
+     },
+     {
+      "personal_ID": 1,
+      "time": "2019 - 2021",
+      "job_title": "IT Business Analyst",
+      "company": "Fast Software, Da Nang",
+      "description": "The first company I had joined immediately after graduation from university. I really appreciate for experiences given from this first job. I improved a lot of a BA’s main skills through doing projects such as communicate with stakeholders, writing documents, working directedly with the system and so on.\n- Gather requirements from stakeholders and write down feature list.\n- Communicate and validate requirements with stakeholders.\n- Write Business Requirement Document, Project Vision Document, User guide\n- Senerios Testing\n- Onsite and analyze process issues to make improvements through digital transformation\n- Coordinate with different teams to ensure the quality of outcomes\n- Plan and organize"
+     },
+     {
+      "personal_ID": 1,
+      "time": "2017 - 2019",
+      "job_title": "Designer & Copy Writer",
+      "company": "Advertising Agency, Da Nang",
+      "description": "The part time job when I was a student at university. I learned a huge knowledge about digital marketing through working with my team leader, my knowledge I was learned mainly focus on SEO. I also learned the organizing and planning skills, team working and creative thinking\n- Working as Designer\n- Edit marketing videos \n- Conduct SEO campaign\n- Write content for SEO campaign."
+     }
+    ],
+    "project":[
+     {
+      "personal_ID": 1,
+      "Project_ID": 1,
+      "project_name": "Vehicle Weighing Station",
+      "company": "Fast Software",
+      "project_description": "Connecting data from manufactory system to vehicle weighing software ",
+      "role": "IT Business Analyst ",
+      "team_size": 3,
+      "technologies": "MSSQL, .NET"
+     },
+     {
+      "personal_ID": 1,
+      "Project_ID": 2,
+      "project_name": "Accounting Software",
+      "company": "Fast Software",
+      "project_description": "Connecting data from other system to accounting system that support to manage accounting, \nwarehouse, and human resource for Da Nang port",
+      "role": "IT Business Analyst ",
+      "team_size": 6,
+      "technologies": "MSSQL, .NET"
+     },
+     {
+      "personal_ID": 1,
+      "Project_ID": 3,
+      "project_name": "Purchasing Management System",
+      "company": "Fast Software",
+      "project_description": "ERP system designed for help ware house and purchasing management",
+      "role": "IT Business Analyst ",
+      "team_size": 6,
+      "technologies": "MSSQL, .NET"
+     },
+     {
+      "personal_ID": 1,
+      "Project_ID": 4,
+      "project_name": "Accounting Software",
+      "company": "Fast Software",
+      "project_description": "Digital transformation for business",
+      "role": "IT Business Analyst ",
+      "team_size": 4,
+      "technologies": "MSSQL, .NET"
+     },
+     {
+      "personal_ID": 1,
+      "Project_ID": 5,
+      "project_name": "Customer Relationship Management System",
+      "company": "FPT Software ",
+      "project_description": "Maintain and enhancement Customer Relationship Management System.",
+      "role": "IT Business Analyst ",
+      "team_size": 10,
+      "technologies": "Azure, MS D365, .NET, JavaScript"
+     },
+     {
+      "personal_ID": 1,
+      "Project_ID": 6,
+      "project_name": "Customer Service Portal",
+      "company": "FPT Software ",
+      "project_description": "Developing Customer Service Portal for insurance term designed for helps internal staff and third party \nstaff promptly support customer.",
+      "role": "IT Business Analyst ",
+      "team_size": 8,
+      "technologies": "Azure, Power Platform, .NET, JavaScript"
+     },
+     {
+      "personal_ID": 1,
+      "Project_ID": 7,
+      "project_name": "Data Migration",
+      "company": "FPT Software ",
+      "project_description": "Data migration by using SQL query statements to mapping data from old system to new system based on requirements.",
+      "role": "IT Business Analyst ",
+      "team_size": 18,
+      "technologies": "MSSQL, React, .NET"
+     },
+     {
+      "personal_ID": 1,
+      "Project_ID": 8,
+      "project_name": "Marketing Automation",
+      "company": "FPT Software ",
+      "project_description": "Maintain and enhance the internal system of a bank designed for helping the marketing department rapidly run a new marketing campaign by refund for customers who use bank’s service.",
+      "role": "IT Business Analyst ",
+      "team_size": 20,
+      "technologies": "Oracle"
+     }
+    ],
+    "project_responsibilities":[
+     {
+      "project_ID": 1,
+      "responsibility": "Observe and study operation to make business process mode"
+     },
+     {
+      "project_ID": 1,
+      "responsibility": "Discuss and Provide solution"
+     },
+     {
+      "project_ID": 1,
+      "responsibility": "Support and fixing problems on database and business process"
+     },
+     {
+      "project_ID": 1,
+      "responsibility": "Prepare user guide and make training session to user"
+     },
+     {
+      "project_ID": 2,
+      "responsibility": "Working onsite to research the operation of logistic process in por"
+     },
+     {
+      "project_ID": 2,
+      "responsibility": "Writing current state analysis document and transfer to team"
+     },
+     {
+      "project_ID": 2,
+      "responsibility": "Following and support client using system"
+     },
+     {
+      "project_ID": 2,
+      "responsibility": "Working with developer to hotfix bugs"
+     },
+     {
+      "project_ID": 3,
+      "responsibility": "Onsite and communicate with stakeholders to gather requirements and clarify business issues"
+     },
+     {
+      "project_ID": 3,
+      "responsibility": "Plan and organize roadmap of project"
+     },
+     {
+      "project_ID": 3,
+      "responsibility": "Write business requirement document include current state analysis, business requirement solution"
+     },
+     {
+      "project_ID": 3,
+      "responsibility": "Work closely with Dev and tester to keep tracking project ensure launch on time"
+     },
+     {
+      "project_ID": 3,
+      "responsibility": "Scenrios test and write user guide"
+     },
+     {
+      "project_ID": 4,
+      "responsibility": "Implementing the accounting and ERP system standard version and support client for using in person, also gather change request"
+     },
+     {
+      "project_ID": 4,
+      "responsibility": "Communicate with stakeholders to clarify requirements and solution"
+     },
+     {
+      "project_ID": 4,
+      "responsibility": "Write Business requirement documents"
+     },
+     {
+      "project_ID": 5,
+      "responsibility": "Communicate with PO and client to clearly understand business process and provide solution to enhancement"
+     },
+     {
+      "project_ID": 5,
+      "responsibility": "Writing User Story, FSD"
+     },
+     {
+      "project_ID": 5,
+      "responsibility": "Design Wireframe, prototype for new screens"
+     },
+     {
+      "project_ID": 5,
+      "responsibility": "Support scenerios testing, and clarify issues and bugs on launch phrase"
+     },
+     {
+      "project_ID": 6,
+      "responsibility": "Gather requirements from client and PO"
+     },
+     {
+      "project_ID": 6,
+      "responsibility": "Writing User Story, FSD, SRS"
+     },
+     {
+      "project_ID": 6,
+      "responsibility": "Design Wireframe, Prototype"
+     },
+     {
+      "project_ID": 6,
+      "responsibility": "Scenerios testing, support clarify issues and bugs with clients "
+     },
+     {
+      "project_ID": 7,
+      "responsibility": "Create the mapping document base on using table definition, old system and SRS of new system "
+     },
+     {
+      "project_ID": 7,
+      "responsibility": "Communicate with BA and Dev to clarify information about SRS"
+     },
+     {
+      "project_ID": 8,
+      "responsibility": "Receive requirements and closely working with project team of client side to clarify and write terms and conditions document"
+     },
+     {
+      "project_ID": 8,
+      "responsibility": "Writing SQL queries statement based on terms and conditions document of the marketing campaign"
+     },
+     {
+      "project_ID": 8,
+      "responsibility": "Scenarios testing for queried lists"
+     }
+    ]
+    }

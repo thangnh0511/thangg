@@ -91,11 +91,11 @@
     font-weight:bolder;
     letter-spacing: 4px;
     color: var(--theme-color-5);}
-.header-logo h1 {
-    /* font-size: 38px; */
-    /* font-family: title-font; */
     
-}
+/* .header-logo h1 {
+    font-size: 38px; 
+    font-family: title-font; 
+} */
 
 .header-nav {
     width: 75rem;
@@ -296,9 +296,9 @@
 
 
 /* --------TOPIC ----------- */
-.topic  {
+/* .topic  {
 
-}
+} */
 
 .topic-header {
     font-size: 24px;
@@ -334,9 +334,9 @@
     flex-flow: row wrap;
 }
 
-.topic-content--left {
+/* .topic-content--left {
 
-}
+} */
 
 .topic-content--left >img {
     width: 100%;

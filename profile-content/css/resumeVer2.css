@@ -1,0 +1,52 @@
+@import url(asset\css\base.css);
+
+.rsm2_title {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-2);
+    text-transform: uppercase;
+    transition: .4s;
+}
+
+.rsm2_block:hover .rsm2_title {
+    letter-spacing: 4px;
+}
+
+.rsm2_font__boxTitle {
+    font-size: 16px;
+    font-weight: 700px;
+    color: var(--black-color);
+}
+
+.rsm2_font__subTitle {
+    font-size: 16px;
+    font-style: italic;
+    color: var(--font-color-gray);
+    opacity: 50%;
+}
+
+.rsm2_font__subTitle2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--black-color);
+}
+
+/* ---------- */
+.rsm2_block {
+    width: 100%;
+    padding: 20px;
+    box-shadow: var(--boxShadow-material-2);
+    border-radius: 6px;
+    z-index: 10;
+    margin: 10px 0;
+}
+.rsm2_block:hover {
+    box-shadow: var(--boxShadow-material-1);
+    cursor: pointer;
+}
+
+
+
+.flex-box {
+    flex-grow: 2 !important;
+}
