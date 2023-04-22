@@ -44,6 +44,7 @@
   .tab-item.active {
     opacity: 1;
     /* font-weight: 700; */
+    color: var(--black-color);
   }
   .tab-content {
     padding: 28px 0;
@@ -66,12 +67,20 @@
     display: flex;
     flex-flow: column;
     align-items: center;
+      min-height: 500px ;
+      justify-content: center ;
+
 }
 
 .notify h3 {
   margin-top: 20px;
+  text-align: center;
 }
 
 .notify img {
     width: 250px;
+}
+
+.tabs a {
+  text-decoration: none;
 }
