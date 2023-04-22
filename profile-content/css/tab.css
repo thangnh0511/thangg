@@ -84,3 +84,7 @@
 .tabs a {
   text-decoration: none;
 }
+
+.tabs a .active {
+  text-decoration: none;
+}
