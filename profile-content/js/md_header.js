@@ -9,7 +9,7 @@ export const DATA_PERSONAL = {
       "linkedin": "www.linkedin.com\/in\/thang-nh",
       "lastUpdate": "22\/04\/2023",
       "imageUrl": "",
-      "version": "1.220402"
+      "version": "220402.02"
 }
 
 // ------------------------------
