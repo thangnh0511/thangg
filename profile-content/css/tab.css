@@ -51,6 +51,7 @@
   .tab-pane {
     color: #333;
     display: none;
+    width: 100%;
   }
   .tab-pane.active {
     display: block;
@@ -60,3 +61,17 @@
     margin-bottom: 8px;
   }
   
+  .notify {
+    padding: 30px 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.notify h3 {
+  margin-top: 20px;
+}
+
+.notify img {
+    width: 250px;
+}
