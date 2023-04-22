@@ -7,7 +7,7 @@ export const DATA_PERSONAL = {
       "phoneNumber": "0906401845",
       "email": "thangnh0511@gmail.com",
       "linkedin": "www.linkedin.com\/in\/thang-nh",
-      "lastUpdate": "18\/04\/2023",
+      "lastUpdate": "22\/04\/2023",
       "imageUrl": ""
 }
 
