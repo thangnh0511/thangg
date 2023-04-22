@@ -5,7 +5,7 @@ const $$ = document.querySelectorAll.bind(document);
 const tabs = $$(".tab-item");
 const panes = $$(".tab-pane");
 
-console.log(tabs)
+console.log(tabs.index)
 console.log(panes)
 
 const tabActive = $(".tab-item.active");
