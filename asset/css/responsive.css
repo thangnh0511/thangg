@@ -114,7 +114,10 @@
         font-size: 14px;
     }
 
-
+    .notify {
+        min-height: 500px !important;
+        justify-content: center !important;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
