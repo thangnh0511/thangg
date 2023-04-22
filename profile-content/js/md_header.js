@@ -8,7 +8,8 @@ export const DATA_PERSONAL = {
       "email": "thangnh0511@gmail.com",
       "linkedin": "www.linkedin.com\/in\/thang-nh",
       "lastUpdate": "22\/04\/2023",
-      "imageUrl": ""
+      "imageUrl": "",
+      "version": "1.220402"
 }
 
 // ------------------------------
@@ -50,7 +51,8 @@ function loadingHeader() {
         <div id="h-status" class="st-${status.disStatus}"></div>
         <div>
             <p class="title-name">${data.name}</p>
-            <p class="update-date">Last Update - ${data.lastUpdate}</p>
+            <!-- <p class="update-date">Last Update - ${data.lastUpdate}</p> -->
+            <p class="update-date">Version - ${data.version}</p>
         </div>
     </div>
     <a href="https://firebasestorage.googleapis.com/v0/b/personal-profile-32045.appspot.com/o/pdf%2FNGUYEN%20HUU%20THANG.pdf?alt=media&token=dc9017cb-e87d-4aaf-a08c-7358df287b6a" class="download-btn black-color"> 
