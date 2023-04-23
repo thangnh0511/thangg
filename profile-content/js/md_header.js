@@ -46,13 +46,16 @@ function loadingHeader() {
     document.getElementById("_footer").style.backgroundColor = status.color;
 
     document.getElementById('_002-h').innerHTML = `
-    <a href="../profile.html" class="fas fa-arrow-left back-btn"></a>
+    <a 
+        class="fas fa-arrow-left back-btn"
+        onclick="alert('Sorry, My primary website is being updating !')"
+        ></a>
     <div id="title-header">
         <div id="h-status" class="st-${status.disStatus}"></div>
         <div>
             <p class="title-name">${data.name}</p>
-            <!-- <p class="update-date">Last Update - ${data.lastUpdate}</p> -->
-            <p class="update-date">Version - ${data.version}</p>
+            <p class="update-date">Last Update - ${data.lastUpdate}</p>
+            <!-- <p class="update-date">Version - ${data.version}</p> -->
         </div>
     </div>
     <a href="https://firebasestorage.googleapis.com/v0/b/personal-profile-32045.appspot.com/o/pdf%2FNGUYEN%20HUU%20THANG.pdf?alt=media&token=dc9017cb-e87d-4aaf-a08c-7358df287b6a" class="download-btn black-color"> 
