@@ -58,11 +58,73 @@
         font-size: 22px;
     }
     .resume__status {
+        height: 46px !important;
         width: 130px;
         text-align: center;
     }
 
+    .timeline-block {
+        border-radius: 6px;
+        cursor: pointer;
+        box-shadow: var(--boxShadow-material-2);    }
 
+    .timeline__time {
+        padding: 4px 16px !important;
+        width: fit-content !important;
+        margin-top: 0px;
+    }
+
+    .timeline__content {
+        margin-left: 0px !important;
+        padding: 24px 0px;
+        height: 100%;
+    }
+
+    .tl_line { 
+        position: relative;
+        background: transparent;
+    }
+    
+    .tl_line::after {
+        position: absolute;
+        content: '';
+        left: -25px !important;
+        top: -26px !important;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        border: 4px solid var(--color-red);
+        background-color: var(--white-color) !important;
+    }
+    
+    .tl_line::before {
+        position: absolute;
+        content: '';
+        left: -17px !important;
+        top: -10px !important;
+        width: 4px;
+        height: 119% !important;
+        background-color: var(--color-red) !important;
+        opacity: 1 !important;
+    }   
+    
+    .tl_lastLine { 
+        position: relative;
+    }
+    
+    .tl_lastLine::after {
+        position: absolute;
+        content: '';
+        left: -25px !important;
+        top: -26px !important;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        border-color: transparent;
+        border: 4px solid var(--color-red) !important;
+        background: var(--white-color) !important;
+    }
+    
 
 }
 
