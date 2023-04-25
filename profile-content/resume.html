@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./resume.css">
     <link rel="stylesheet" href="./css/resumeVer2.css">
     <link rel="stylesheet" href="./css/tab.css">
+    <link rel="stylesheet" href="./css/timeline.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -51,21 +52,7 @@
                 </a>
                 <div class="line"></div>
               </div>
-            
-            <!-- <div class="tab-block">
-                <div id="vie" class="tab-btn btn__active" onclick="activeButton(vie)"> 
-                    Overview
-                </div>
-                <div id="exp" class="tab-btn" onclick="activeButton(exp)"> 
-                    Experiences
-                </div>
-                <div id="pro" class="tab-btn" onclick="activeButton(pro)"> 
-                    Projects
-                </div>
-                <div id="ref" class="tab-btn" onclick="activeButton(ref)"> 
-                    References
-                </div>
-            </div> -->
+
 
 
             <div class="resume-content-main">
@@ -91,15 +78,44 @@
                         </div>
                     </div>
                 </div>
+                <!-- Experiences -->
                 <div id="_exp" class="tab-pane active">
                     <h1 class="rsm2_title">Experiences</h1>
-                    <div class="notify">
-                        <div>
-                            <img class="" src="../asset/img/working.png" alt="">
+
+                    <div class="timeline-section">
+                        <div class="row timeline-block">
+                            <div class="col-2 timeline__time">
+                                <p>2021 - CURRENT</p>
+                            </div>
+                            <div class="col-8 timeline__content tl_line">
+                                <div class="timeline__subtitle">
+                                    FPT Software, Da Nang
+                                </div>
+                                <div class="timeline__title">
+                                    IT BUSINESS ANALYST
+                                </div>
+                                <div class="timeline__Description">
+                                    I improved my mindset and technical knowledge a lot when working at my present company. There were various challenges when working on outsourcing projects for client came from abroad. At last, I found myself really like this job and ready for new challenges
+                                </div>
+                                <div class="timeline__res">
+                                    <ul class="res__list">
+                                        <li>Gather Requirements </li>
+                                        <li>Communicate and validate requirements with stakeholders</li>
+                                        <li>Write User Story, Use Case, FSD, SRS</li>
+                                        <li>Design Mock-up, Wireframe, Prototype</li>
+                                        <li>Analyze Data and writing query script</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                        <h3>Oops! There's no content now. It will be updated soon</h3>
                     </div>
+
+
+
+
+
                 </div>
+                <!-- End - Experiences -->
                 <div id="_pro" class="tab-pane">
                     <h1 class="rsm2_title">Projects</h1>
                     <div class="notify">
@@ -113,7 +129,7 @@
                     <h1 class="rsm2_title">References</h1>
                     <div class="notify">
                         <div>
-                            <img class="" src="../asset/img//Mesa de trabajo 5.png" alt="">
+                            <img class="" src="../asset/img//working.png" alt="">
                         </div>
                         <h3>Oops! There's no content now. It will be updated soon</h3>
                     </div>
@@ -134,7 +150,8 @@
     <script src="./asset/javascript/button.js"></script>
     <!-- <script type="module" src="./dataLoading.js"></script> -->
     <script type="module" src="./js/md_header.js"></script>
-    <script type="module" src="./js/md_Overview.js"></script>
+    <script type="module" src="./js/md_overview.js"></script>
+    <script type="module" src="./js/md_experience.js"></script>
     <script src="./app.js"></script>
 </body>
 </html>
