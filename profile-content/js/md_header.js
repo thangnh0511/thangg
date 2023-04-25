@@ -9,7 +9,7 @@ export const DATA_PERSONAL = {
       "linkedin": "www.linkedin.com\/in\/thang-nh",
       "lastUpdate": "22\/04\/2023",
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/porfolio-c82b8.appspot.com/o/image%2F1632814895611.jpg?alt=media&token=878cf14e-3ddd-4e4e-8e91-eb7fd8da30b9",
-      "version": "220402.0.09"
+      "version": "220402.0.10"
 }
 
 // ------------------------------
