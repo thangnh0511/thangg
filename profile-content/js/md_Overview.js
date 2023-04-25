@@ -85,7 +85,7 @@ renderCommon(dataTechnical, 'technical skills', '_technical')
 renderCommon(dataCertification,'certificates', '_certificate')
 renderCommon(dataHobbies,'hobbies', '_hobbies')
 // ----- END RENDERING -----
-console.log(dataTechnical)
+// console.log(dataTechnical)
 
 function renderSummary() {
     document.getElementById('_summary').innerHTML = ` <div class="rsm2_title" style="letter-spacing: 4px;">
@@ -138,7 +138,7 @@ function renderCommon(data, name ,id) {
             i++
         });
     }
-    console.log(dom)
+    // console.log(dom)
     document.getElementById(id).innerHTML = dom;
 }
 
