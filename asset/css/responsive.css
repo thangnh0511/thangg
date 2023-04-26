@@ -66,7 +66,7 @@
     .timeline-block {
         border-radius: 6px;
         cursor: pointer;
-        box-shadow: var(--boxShadow-material-2);    }
+         }
 
     .timeline__time {
         padding: 4px 16px !important;
@@ -75,9 +75,12 @@
     }
 
     .timeline__content {
+        margin-top: 8px !important;
         margin-left: 0px !important;
         padding: 24px 0px;
         height: 100%;
+        border-radius: 6px;
+        box-shadow: var(--boxShadow-material-2);    
     }
 
     .tl_line { 
