@@ -68,6 +68,10 @@
         cursor: pointer;
          }
 
+    .timeline-block:hover {
+        box-shadow: none !important;
+    }
+
     .timeline__time {
         padding: 4px 16px !important;
         width: fit-content !important;
@@ -106,7 +110,7 @@
         left: -17px !important;
         top: -10px !important;
         width: 4px;
-        height: 119% !important;
+        height: 120% !important;
         background-color: var(--color-red) !important;
         opacity: 1 !important;
     }   
@@ -179,7 +183,6 @@
         font-size: 14px;
     }
 
-   
 }
 
 /* Medium devices (tablets, 768px and up) */
