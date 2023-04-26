@@ -10,6 +10,7 @@
 .timeline-block {
     width: 100%;
     display: flex;
+    cursor: pointer;
     flex-flow: row;
     margin-left: 0 !important;
     margin-bottom: 32px;
@@ -19,7 +20,6 @@
 
 .timeline-block:hover {
     border-radius: 6px;
-    cursor: pointer;
     box-shadow: var(--boxShadow-material-2);
 }
 
