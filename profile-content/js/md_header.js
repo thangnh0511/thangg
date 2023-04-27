@@ -9,6 +9,7 @@ export const DATA_PERSONAL = {
       "linkedin": "www.linkedin.com\/in\/thang-nh",
       "lastUpdate": "22\/04\/2023",
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/porfolio-c82b8.appspot.com/o/image%2F1632814895611.jpg?alt=media&token=878cf14e-3ddd-4e4e-8e91-eb7fd8da30b9",
+      "resumeUrl": "https://firebasestorage.googleapis.com/v0/b/porfolio-c82b8.appspot.com/o/file%2FBA_ThangNguyen_221012.pdf?alt=media&token=3c95ba4f-25ef-470b-9740-97c2aee4c314",
       "version": "220402.0.10"
 }
 
@@ -58,7 +59,7 @@ function loadingHeader() {
             <!-- <p class="update-date">Version - ${data.version}</p> -->
         </div>
     </div>
-    <a href="https://firebasestorage.googleapis.com/v0/b/personal-profile-32045.appspot.com/o/pdf%2FNGUYEN%20HUU%20THANG.pdf?alt=media&token=dc9017cb-e87d-4aaf-a08c-7358df287b6a" class="download-btn black-color"> 
+    <a href="${data.resumeUrl}" class="download-btn black-color"> 
         <!-- <i class="fas fa-file-download"></i> -->
         <i class="fa-solid fas fa-download"></i>
         <p>Download</p>
