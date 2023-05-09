@@ -21,7 +21,7 @@
         color: var(--theme-color-5);
         text-transform: uppercase;
         text-align: center !important;
-        letter-spacing:-2px !important;
+        letter-spacing:-1.7px !important;
     }
 
     .resume__JobS {
@@ -80,7 +80,7 @@
     }
 
     /* .rsm-contact-item {
-        text-align: center;
+        align-self: center !important;
     } */
 
 
