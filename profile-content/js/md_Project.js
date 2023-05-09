@@ -229,7 +229,7 @@ function displayPro() {
     {
         console.log(com_data[com].Company_name)
         content += `<div class="company">
-        <i class="fa-regular fa-circle-check"></i>
+        <i class="fa-regular fa-star"></i>
             <p>${com_data[com].Company_name}</p>
             </div>`
 
