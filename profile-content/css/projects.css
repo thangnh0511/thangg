@@ -2,12 +2,14 @@
 .accordion-borderless .accordion-item .accordion-button {
     /* background: var(--text-color); */
     /* box-shadow: var(--boxShadow-material-1); */
+    transition: .4s;
 }
 
 .accordion-borderless .accordion-item .accordion-button:not(.collapsed) {
     background-color: var(--color-black) !important;
     color: var(--white-color) !important;
     box-shadow: var(--boxShadow-material-1);
+    text-transform: uppercase;
 }
 
 .accordion-borderless .accordion-item {
@@ -21,6 +23,24 @@
 
 #projectList {
     margin-top: 20px;
+}
+
+.company {
+    margin: 30px 0px 10px 0px;
+    display: flex;
+    flex-flow: row;
+    align-items: baseline;
+    line-height: 32px;
+}
+
+.company p , i{
+    font-size: 32px !important;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.company p {
+    margin-left: 20px;
 }
 
 .projectTitle {
