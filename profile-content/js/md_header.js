@@ -2,7 +2,7 @@ export const DATA_PERSONAL = {
     "id": 1,
       "name": "Nguyen Huu Thang",
       "position": "IT Business Analyst ",
-      "status": "close",
+      "status": "open",
       "address": "Da Nang city",
       "phoneNumber": "0906401845",
       "email": "thangnh0511@gmail.com",
