@@ -109,8 +109,10 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    /* padding-bottom: 24px;
-    border-bottom: 1px solid var(--black-color); */
+    /* padding-bottom: 24px; */
+    border-bottom: 4px solid var(--color-gray-1);
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
 
 }
 
@@ -160,6 +162,16 @@
     background: #f7e463;
 }
 
+.st-available-text {
+    color: var(--color-green);
+}
+.st-working-text {
+    color: #eb6060;
+}
+.st-waiting-text {
+    color: #f7e463;
+}
+
 
 .profile-avata { 
     position: relative;
@@ -178,7 +190,8 @@
 
 .resume__JobS {
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap-reverse;
+    justify-content: start;
     }
 
 .resume__jobTitle {
@@ -188,9 +201,9 @@
 }
 
 .resume__status {
-    height: 32px;
+    line-height: 32px;
     /* width: fit-content; */
-    padding: 4px;
+    padding: 10px;
     display: block;
     align-self: center;
     border-radius: 8px;
@@ -199,9 +212,11 @@
 }
 
 .resume__status p {
-    font-size: 12px;
+    font-size: 14px;
+    padding: 0px 6px;
     color: #fff;
     align-self: center;
+    margin-bottom: 0px;
 }
 
 
@@ -214,10 +229,11 @@
 }
 
 .resume__name {
-    font-size: 48px;
+    font-size: 42px;
     font-family: var(--font);
     font-weight: 900;
     color: var(--theme-color-5);
+    text-transform: uppercase;
 }
 
 
@@ -233,26 +249,30 @@
 }
 
 .resume__contact-listcontact {
-    /* display: flex;
-    flex-flow: wrap column; */
-    display: inline-grid;
+    display: flex;
+    flex-flow: column nowrap;
+    /* align-self: center; */
+    /* box-shadow: var(--boxShadow-material-1); */
 }
 
 .rsm-contact-item {
-    width: fit-content;
+    min-width: 10px;
+    align-self: baseline;
     padding-right: 10px;
-    height: 30px;
+    line-height: 34px;
+    height: 34px;
     text-decoration: none;
-    display: grid;
-        grid-template-columns: 5% 90%;
+    display: flex;
+        flex-flow: row nowrap;
         align-items: center;
-        grid-gap: 10px;
+        justify-content: center;
     position: relative;
     z-index: 1;
     transition: .2s;
 }
 
 .rsm-contact-item i {
+    width: 24px;
     font-size: 16px;
     color: var(--theme-color-5);
 }
@@ -266,7 +286,7 @@
 .rsm-contact-item::after {
     position: absolute;
     content: "";
-    top: 0; left: 0; bottom: 0; right: 100%;
+    top: 0; left: 0; bottom: 0; right:100%;
     transition: .5s;
     z-index: -1;
 }
