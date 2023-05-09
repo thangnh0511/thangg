@@ -55,3 +55,12 @@ requestIdleCallback()
 window.addEventListener("load", (event) => {
   console.log("page is fully loaded");
 });
+
+
+
+var myModal = document.getElementById('myModal')
+var myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', function () {
+  myInput.focus()
+})
