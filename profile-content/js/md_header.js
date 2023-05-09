@@ -7,7 +7,7 @@ export const DATA_PERSONAL = {
       "phoneNumber": "0906401845",
       "email": "thangnh0511@gmail.com",
       "linkedin": "www.linkedin.com\/in\/thang-nh",
-      "lastUpdate": "22\/04\/2023",
+      "lastUpdate": "09\/05\/2023",
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/porfolio-c82b8.appspot.com/o/image%2F1632814895611.jpg?alt=media&token=878cf14e-3ddd-4e4e-8e91-eb7fd8da30b9",
       "resumeUrl": "https://firebasestorage.googleapis.com/v0/b/porfolio-c82b8.appspot.com/o/file%2FBA_ThangNguyen_221012.pdf?alt=media&token=3c95ba4f-25ef-470b-9740-97c2aee4c314",
       "version": "220402.0.10"
