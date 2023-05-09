@@ -1,3 +1,4 @@
+
 const DATA_PROJECTS = [
     {
      "personal_ID": 1,
@@ -278,6 +279,18 @@ function displayPro() {
     dom.innerHTML = content
 }
 
-displayPro()
+function verifyCode() {
+    // let code = prompt('Please Enter Code:')
+    let verifyCode = document.getElementById('verifyCode').value
+    console.log(verifyCode)
+    if(verifyCode == 30041975) {
+        displayPro()
+    } else {
+        alert('Wrong Code, Please try again !')
+    }
+}
+
+
+
 // console.log(DATA_PROJECTS)
 // console.log(DATA_PROJECTS_RES)
