@@ -1,0 +1,74 @@
+.accordion-borderless .accordion-item .accordion-button {
+    /* background: var(--text-color); */
+    /* box-shadow: var(--boxShadow-material-1); */
+}
+
+.accordion-borderless .accordion-item .accordion-button:not(.collapsed) {
+    background-color: var(--color-black) !important;
+    color: var(--white-color) !important;
+    box-shadow: var(--boxShadow-material-1);
+}
+
+.accordion-borderless .accordion-item {
+    box-shadow: var(--boxShadow-material-2);
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+.projectTitle {
+    font-size: 18px !important;
+}
+
+.project-card {
+
+}
+
+.project-card_body {
+
+}
+
+.project-card_body h3 {
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-style: italic;
+    color: var(--color-red);
+}
+
+.project-card_body p, .project-card_body li {
+    font-size: 16px;
+}
+
+.project-detail {
+    padding: 12px 10px 10px 12px !important;
+    background-color: var(--color-gray-1);
+    border-radius: 6px;
+    align-self: flex-start;
+}
+
+.project-info {
+    position: relative;
+    padding-left: 20px ;
+
+}
+
+/* .pc_right::after {
+    position: absolute;
+    content: '';
+    left: -40px;
+    top: 24px;
+    width: 2px;
+    bottom: 24px;
+    background-color: var(--color-black);
+    opacity: 0.5;
+} */
+
+.pc_projectDes {
+
+}
+
+.pc_projectRes {
+
+}
