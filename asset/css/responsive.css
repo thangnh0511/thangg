@@ -6,6 +6,75 @@
 @media (min-width: 300px) and (max-width: 575px) { 
 
 
+    .resume__contact {
+        box-sizing: border-box;
+        width: 100% !important;
+        padding: 10px;
+        box-shadow: var(--boxShadow-material-2);
+        border-radius: 6px;
+    }
+
+    .resume__name {
+        font-size: 32px !important;
+        font-family: var(--font);
+        font-weight: 900;
+        color: var(--theme-color-5);
+        text-transform: uppercase;
+        text-align: center !important;
+        letter-spacing:-2px !important;
+    }
+
+    .resume__JobS {
+        justify-content: center !important ;
+    }
+
+    .resume__jobTitle {
+        align-self: center;
+        margin-top: 20px;
+        font-size: 25px !important;
+        font-weight: 600;
+        color: var(--theme-color-5);
+        letter-spacing: -2px;
+    }
+
+    .resume-content-title {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        /* padding-bottom: 24px; */
+        border-bottom: 0px solid var(--color-gray-1) !important;
+        border-bottom-left-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
+    }
+    
+    .resume__status {
+        line-height: 32px;
+        /* width: fit-content; */
+        display: none !important;
+        align-self: center;
+        border-radius: 8px;
+        margin-left: 0px !important;
+        padding: 10px 6px 0px 6px;
+    }
+    
+    .resume__status p {
+        font-size: 14px;
+        padding: 0px 6px;
+        color: #fff;
+        align-self: center;
+        margin-bottom: 0px;
+    }
+
+    .st-available-text {
+        color: var(--color-green) !important;
+    }
+    .st-working-text {
+        color: #eb6060 !important;
+    }
+    .st-waiting-text {
+        color: #f7e463 !important;
+    }
+
     #verifyButton {
         width: 100%;
     }
