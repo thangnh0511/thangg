@@ -88,8 +88,19 @@
     padding: 10px;
     margin: auto;
     align-self: center;
+    box-shadow: var(--boxShadow-material-2);
+    border-radius: 6px;
+    text-align: center;
 }
 
 .formCode input, .formCode label {
     font-size: 16px;
+}
+
+.formCode p {
+    padding: 12px 12px 12px 12px;
+    font-size: 14px;
+    font-style: italic;
+    color: var(--primary-1);
+    text-align: center;
 }
