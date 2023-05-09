@@ -276,7 +276,7 @@
 }
 
 .rsm-contact-item:hover {
-    padding: 0 10px;
+    padding-left: 10px;
 }
 
 .rsm-contact-item:hover::after {
