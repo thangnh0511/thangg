@@ -123,7 +123,7 @@ function renderCommon(data, name ,id) {
                     dom += `<li class="fs-16">${tempArray[index]}</li>`
                 }
                 dom += `</ul>`
-            console.log(subCate.description)
+            // console.log(subCate.description)
             i++
         });
     } else {
@@ -134,7 +134,7 @@ function renderCommon(data, name ,id) {
                     dom += `<li class="fs-16">${tempArray[index]}</li>`
                 }
                 dom += `</ul>`
-            console.log(subCate.description)
+            // console.log(subCate.description)
             i++
         });
     }
