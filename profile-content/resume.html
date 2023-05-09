@@ -58,7 +58,7 @@
 
             <header id="_001-h" class="resume-content-title"></header>
             <div class="tabs">
-                <a class="tab-item" onclick="requestIdleCallback()">
+                <a class="tab-item active" onclick="requestIdleCallback()">
                   <i class="tab-icon fas fa-user"></i>
                   Overview
                 </a>
@@ -66,7 +66,7 @@
                   <i class="tab-icon fas fa-briefcase"></i>
                   Experiences
                 </a>
-                <a class="tab-item active" onclick="requestIdleCallback()">
+                <a class="tab-item" onclick="verifyCode()">
                   <i class="tab-icon fas fa-plus-circle"></i>
                   Projects
                 </a>
@@ -80,7 +80,7 @@
 
 
             <div class="resume-content-main">
-                <div id="_sum" class="tab-pane">
+                <div id="_sum" class="tab-pane active">
                     <div id="_summary" class="col-12 text-center"></div>
                     <div class="flex-box row">
                         <div class="col-12 col-lg-6">
@@ -107,113 +107,14 @@
                     <h1 class="rsm2_title">Experiences</h1>
                 </div>
                 <!-- End - Experiences -->
-                <div id="_pro" class="tab-pane active">
+                <div id="_pro" class="tab-pane">
                     <h1 class="rsm2_title">Projects</h1>
-                    <!-- <div class="notify">
-                        <div>
-                            <img class="" src="../asset/img/Mesa de trabajo 6.png" alt="">
+                    <div class="accordion accordion-borderless" id="projectList">                 
+                        <div class="formCode">
+                            <!-- <label for="verifyCode">Enter Code</label> -->
+                            <input type="number" class="form-control" id="verifyCode" aria-describedby="emailHelp" placeholder="Enter Verify Code" >
+                            <button type="button" class="btn btn-warning" id="verifyButton" onclick="verifyCode()">Show Content</button>
                         </div>
-                        <h3>Oops! There's no content now. It will be updated soon</h3>
-                    </div> -->
-                    <div class="accordion accordion-borderless" id="projectList">
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="001">
-                            <button class="accordion-button projectTitle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" >
-                                Marketing Automation
-                            </button>
-                          </h2>
-                          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="001" data-bs-parent="#projectList" >
-                            <div class="accordion-body">
-                              <div class="project-card">
-                                <div class="project-card_body">
-                                    <div class="row">
-                                        <div class="col-4 project-detail">
-                                            <div class="pc_company">
-                                                <h3>Company</h3>
-                                                <p>FPT Software</p>
-                                            </div>
-                                            <div class="pc_role">
-                                                <h3>Role</h3>
-                                                <p>IT Business Analyst</p>
-                                            </div>
-                                            <div class="pc_teamsz">
-                                                <h3>Team size</h3>
-                                                <p>20</p>
-                                            </div>
-                                            <div class="pc_tech">
-                                                <h3>Technologies</h3>
-                                                <p>Oracle</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-8 project-info">
-                                            <div class="pc_projectDes">
-                                                <h3>Description</h3>
-                                                <p>ipsum dolor, sit amet consectetur adipisicing elit. Alias reiciendis quibusdam iusto, praesentium perspiciatis quisquam doloremque magnam, recusandae in voluptatem sequi quo architecto rem aliquam eius accusamus sint. Impedit, ab.</p> 
-                                            </div>
-                                            <div class="pc_projectRes">
-                                                <h3>Responsibilities</h3>
-                                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, dolores sequi quibusdam est, architecto at enim aspernatur libero, harum maxime blanditiis sunt delectus numquam eum sapiente similique totam ipsam exercitationem.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="002">
-                            <button class="accordion-button projectTitle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                              Accordion Item #2
-                            </button>
-                          </h2>
-                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#projectList">
-                            <div class="accordion-body">
-                              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="003">
-                            <button class="accordion-button projectTitle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                              Accordion Item #3
-                            </button>
-                          </h2>
-                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#projectList">
-                            <div class="accordion-body">
-                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="004">
-                              <button class="accordion-button projectTitle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse004" aria-expanded="false" aria-controls="collapseFour">
-                                Accordion Item #3
-                              </button>
-                            </h2>
-                            <div id="collapse004" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#projectList">
-                              <div class="accordion-body">
-                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                              </div>
-                            </div>
-                            
-                          </div>
-
-
-                          <div class="accordion-item">
-                            <h2 class="accordion-header" id="005">
-                              <button class="accordion-button projectTitle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse005" aria-expanded="false" aria-controls="collapseFour">
-                                Accordion Item #5
-                              </button>
-                            </h2>
-                            <div id="collapse005" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#projectList">
-                              <div class="accordion-body">
-                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                              </div>
-                            </div>
-                            
-                          </div>
                       </div>
                 </div>
 
@@ -245,7 +146,7 @@
     <script type="module" src="./js/md_header.js"></script>
     <script type="module" src="./js/md_overview.js"></script>
     <script type="module" src="./js/md_experience.js"></script>
-    <script type="module" src="./js/md_project.js"></script>
+    <script src="./js/md_project.js"></script>
     <script src="./app.js"></script>
 </body>
 </html>
