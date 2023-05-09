@@ -73,7 +73,7 @@ function loadingHeader() {
         </div>
         <div class="resume__info col-md-8 col-lg-8">
             <div class="resume__JobS">
-                <div class="resume__jobTitle">${data.position}</div>
+                <div class="resume__jobTitle st-${status.disStatus}-text">${data.position}</div>
                 <div class="resume__status st-${status.disStatus} "><p>${status.content}</p></div>
             </div>
             <div class="resume__name">
