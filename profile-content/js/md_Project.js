@@ -1,8 +1,18 @@
-
+const DATA_COMPANY = [
+    {
+        "Company_ID": 1,
+        "Company_name": "Fast Software"
+    }, 
+    {
+        "Company_ID": 2,
+        "Company_name": "FPT Software"
+    }
+]
 const DATA_PROJECTS = [
     {
      "personal_ID": 1,
      "Project_ID": 1,
+     "company_ID": 1,
      "project_name": "Vehicle Weighing Station",
      "company": "Fast Software",
      "project_description": "Connecting data from manufactory system to vehicle weighing software ",
@@ -13,6 +23,7 @@ const DATA_PROJECTS = [
     {
      "personal_ID": 1,
      "Project_ID": 2,
+     "company_ID": 1,
      "project_name": "Accounting Software",
      "company": "Fast Software",
      "project_description": "Connecting data from other system to accounting system that support to manage accounting, \nwarehouse, and human resource for Da Nang port",
@@ -23,6 +34,7 @@ const DATA_PROJECTS = [
     {
      "personal_ID": 1,
      "Project_ID": 3,
+     "company_ID": 1,
      "project_name": "Purchasing Management System",
      "company": "Fast Software",
      "project_description": "ERP system designed for help ware house and purchasing management",
@@ -33,6 +45,7 @@ const DATA_PROJECTS = [
     {
      "personal_ID": 1,
      "Project_ID": 4,
+     "company_ID": 1,
      "project_name": "Accounting Software",
      "company": "Fast Software",
      "project_description": "Digital transformation for business",
@@ -43,6 +56,7 @@ const DATA_PROJECTS = [
     {
      "personal_ID": 1,
      "Project_ID": 5,
+     "company_ID": 2,
      "project_name": "Customer Relationship Management System",
      "company": "FPT Software ",
      "project_description": "Maintain and enhancement Customer Relationship Management System.",
@@ -53,6 +67,7 @@ const DATA_PROJECTS = [
     {
      "personal_ID": 1,
      "Project_ID": 6,
+     "company_ID": 2,
      "project_name": "Customer Service Portal",
      "company": "FPT Software ",
      "project_description": "Developing Customer Service Portal for insurance term designed for helps internal staff and third party \nstaff promptly support customer.",
@@ -63,6 +78,7 @@ const DATA_PROJECTS = [
     {
      "personal_ID": 1,
      "Project_ID": 7,
+     "company_ID": 2,
      "project_name": "Data Migration",
      "company": "FPT Software ",
      "project_description": "Data migration by using SQL query statements to mapping data from old system to new system based on requirements.",
@@ -73,6 +89,7 @@ const DATA_PROJECTS = [
     {
      "personal_ID": 1,
      "Project_ID": 8,
+     "company_ID": 2,
      "project_name": "Marketing Automation",
      "company": "FPT Software ",
      "project_description": "Maintain and enhance the internal system of a bank designed for helping the marketing department rapidly run a new marketing campaign by refund for customers who use bank’s service.",
@@ -202,78 +219,89 @@ const DATA_PROJECTS_RES = [
 
 
 function displayPro() {
+    let com_data = DATA_COMPANY
     let data = DATA_PROJECTS
     let res_data = DATA_PROJECTS_RES
     let dom = document.getElementById('projectList')
     let content = ''
 
-    for(let i = (data.length - 1); i >= 0 ; i--) {
-        content += `
-        <div class="accordion-item">
-        <h2 class="accordion-header" id="00${data[i].Project_ID}">
-          <button class="accordion-button projectTitle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Collapse${data[i].Project_ID}" aria-expanded="false" aria-controls="" >
-              ${data[i].project_name}
-          </button>
-        </h2>
-        <div id="Collapse${data[i].Project_ID}" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#projectList" >
-          <div class="accordion-body">
-            <div class="project-card">
-              <div class="project-card_body">
-                  <div class="row">
-                      <div class="col-12 col-md-4 project-detail">
-                          <div class="pc_company">
-                              <h3>Company</h3>
-                              <p>${data[i].company}</p>
-                          </div>
-                          <div class="pc_role">
-                              <h3>Role</h3>
-                              <p>${data[i].role}</p>
-                          </div>
-                          <div class="pc_teamsz">
-                              <h3>Team size</h3>
-                              <p>${data[i].team_size}</p>
-                          </div>
-                          <div class="pc_tech">
-                              <h3>Technologies</h3>
-                              <p>${data[i].technologies}</p>
-                          </div>
-                      </div>
-                      <div class="col-12 col-md-8 project-info">
-                          <div class="pc_projectDes">
-                              <h3>Description</h3>
-                              <p>${data[i].project_description}</p> 
-                          </div>
-                          <div class="pc_projectRes">
-                              <h3>Responsibilities</h3>
-                              <ul>
-                              
-      `
-      for(let mi = 1; mi < res_data.length; mi++) {
-        if (res_data[mi].project_ID == i + 1) {
-            console.log(res_data[mi].project_ID + '------' + res_data[mi].responsibility)
-            content += ` 
-                 <li>${res_data[mi].responsibility}</li>
-        `
-        }
-        // if (res_data[e].project_ID == data[i].Project_ID) {
-        //     content += ` 
-        //         <li>${res_data[e].responsibility}</li>
-        //     `
-        // } else {
-        //     break;
-        // }
-      }
-      content += `
-      </ul>
+    for(let com = (com_data.length - 1); com >= 0 ; com--) 
+    {
+        console.log(com_data[com].Company_name)
+        content += `<div class="company">
+        <i class="fa-regular fa-circle-check"></i>
+            <p>${com_data[com].Company_name}</p>
+            </div>`
+
+        for(let i = (data.length - 1); i >= 0 ; i--) {
+            if(data[i].company_ID == com + 1) {
+                content += `
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="00${data[i].Project_ID}">
+                  <button class="accordion-button projectTitle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Collapse${data[i].Project_ID}" aria-expanded="false" aria-controls="" >
+                  ${data[i].project_name}
+                  </button>
+                </h2>
+                <div id="Collapse${data[i].Project_ID}" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#projectList" >
+                  <div class="accordion-body">
+                    <div class="project-card">
+                      <div class="project-card_body">
+                          <div class="row">
+                              <div class="col-12 col-md-4 project-detail">
+                                  <div class="pc_company">
+                                      <h3>Company</h3>
+                                      <p>${data[i].company}</p>
+                                  </div>
+                                  <div class="pc_role">
+                                      <h3>Role</h3>
+                                      <p>${data[i].role}</p>
+                                  </div>
+                                  <div class="pc_teamsz">
+                                      <h3>Team size</h3>
+                                      <p>${data[i].team_size}</p>
+                                  </div>
+                                  <div class="pc_tech">
+                                      <h3>Technologies</h3>
+                                      <p>${data[i].technologies}</p>
+                                  </div>
+                              </div>
+                              <div class="col-12 col-md-8 project-info">
+                                  <div class="pc_projectDes">
+                                      <h3>Description</h3>
+                                      <p>${data[i].project_description}</p> 
+                                  </div>
+                                  <div class="pc_projectRes">
+                                      <h3>Responsibilities</h3>
+                                      <ul>`
+                                      for(let mi = 1; mi < res_data.length; mi++) {
+                                        if (res_data[mi].project_ID == i + 1) {
+                                            // console.log(res_data[mi].project_ID + '------' + res_data[mi].responsibility)
+                                            content += ` 
+                                                 <li>${res_data[mi].responsibility}</li>
+                                        `
+                                        }
+
+            }
+            // if (res_data[e].project_ID == data[i].Project_ID) {
+            //     content += ` 
+            //         <li>${res_data[e].responsibility}</li>
+            //     `
+            // } else {
+            //     break;
+            // }
+          }
+          content += `
+          </ul>
+                              </div>
                           </div>
                       </div>
                   </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      `
+          `
+        }
     }
     // console.log(content)
     dom.innerHTML = content
@@ -289,6 +317,7 @@ function verifyCode() {
         alert('Wrong Code, Please try again !')
     }
 }
+
 
 
 
