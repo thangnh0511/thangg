@@ -198,6 +198,7 @@
     font-size: 32px;
     font-weight: 600;
     color: var(--theme-color-5);
+    letter-spacing: -2px;
 }
 
 .resume__status {
@@ -208,7 +209,8 @@
     align-self: center;
     border-radius: 8px;
     margin-left: 20px;
-    padding: 10px 6px 0px 6px;
+    padding: 4px 6px 0px 6px;
+    letter-spacing: -1px;
 }
 
 .resume__status p {
