@@ -58,12 +58,14 @@ function displayExp() {
 
   let data = DATA_EXPERIENCES;
   let dom = document.getElementById("_exp");
-  let content = '';
+  let content = `
+  <h1 class="rsm2_title">Experiences</h1>
+  `;
 
   for(let i = (data.length - 1); i >= 0 ; i--)
   {
     let tempObj = data[i]
-    console.log(tempObj)
+    // console.log(tempObj)
 
     if(i != 0) {
         content += `<div class="row timeline-block">
