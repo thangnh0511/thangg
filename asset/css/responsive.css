@@ -5,6 +5,16 @@
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 300px) and (max-width: 575px) { 
 
+
+    #verifyButton {
+        width: 100%;
+    }
+
+    .rsm-contact-item {
+        text-align: center;
+    }
+
+
     .tabs {
         position: -webkit-sticky !important;
         position: fixed !important;
