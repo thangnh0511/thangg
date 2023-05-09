@@ -1,3 +1,4 @@
+
 .accordion-borderless .accordion-item .accordion-button {
     /* background: var(--text-color); */
     /* box-shadow: var(--boxShadow-material-1); */
@@ -16,6 +17,10 @@
 .accordion-item {
     margin-bottom: 10px;
     border-radius: 6px;
+}
+
+#projectList {
+    margin-top: 20px;
 }
 
 .projectTitle {
@@ -71,4 +76,20 @@
 
 .pc_projectRes {
 
+}
+
+#verifyButton {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.formCode {
+    max-width: 500px;
+    padding: 10px;
+    margin: auto;
+    align-self: center;
+}
+
+.formCode input, .formCode label {
+    font-size: 16px;
 }
