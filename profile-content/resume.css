@@ -239,7 +239,8 @@
 }
 
 .rsm-contact-item {
-    width: 300px;
+    width: fit-content;
+    padding-right: 10px;
     height: 30px;
     text-decoration: none;
     display: grid;
@@ -248,6 +249,7 @@
         grid-gap: 10px;
     position: relative;
     z-index: 1;
+    transition: .2s;
 }
 
 .rsm-contact-item i {
@@ -264,7 +266,7 @@
 .rsm-contact-item::after {
     position: absolute;
     content: "";
-    top: 0; left: -14.5px; bottom: 0; right: 100%;
+    top: 0; left: 0; bottom: 0; right: 100%;
     transition: .5s;
     z-index: -1;
 }
@@ -272,9 +274,15 @@
 .rsm-contact-item:hover p, .rsm-contact-item:hover i {
     color:  #fff;
 }
+
+.rsm-contact-item:hover {
+    padding: 0 10px;
+}
+
 .rsm-contact-item:hover::after {
     right: 0;
-    background: var(--background-11-deep-blue);
+    background: var(--color-black);
+    border-radius: 6px;
 }
 
 
