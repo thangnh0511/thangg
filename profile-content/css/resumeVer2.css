@@ -1,9 +1,9 @@
 @import url(asset\css\base.css);
 
 .rsm2_title {
-    font-size: 24px;
-    font-weight: bold;
-    color: var(--primary-2);
+    font-size: 34px;
+    font-weight:normal;
+    color: var(--color-red);
     text-transform: uppercase;
     transition: .4s;
 }
