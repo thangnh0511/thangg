@@ -33,14 +33,14 @@
     line-height: 32px;
 }
 
-.company p , i{
+.company p , .company i{
     font-size: 32px !important;
     font-weight: 400;
-    font-style: italic;
 }
 
 .company p {
     margin-left: 20px;
+    font-style: italic;
 }
 
 .projectTitle {
