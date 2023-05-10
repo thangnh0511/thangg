@@ -108,9 +108,12 @@
     padding: 10px;
     margin: auto;
     align-self: center;
-    box-shadow: var(--boxShadow-material-2);
     border-radius: 6px;
     text-align: center;
+}
+
+.box-shadow {
+    box-shadow: var(--boxShadow-material-2);
 }
 
 .formCode input, .formCode label {
