@@ -52,10 +52,10 @@
 
 .download-btn {
     color: var(--white-color);
-    border: 2.5px solid #000;
+    border: 2.5px solid var(--color-black);
     display: block;
     font-size: 20px;
-    width: 150px;
+    width: 120px;
     padding: 5px 5px;
     margin: 5px;
     border-radius: 8px;
