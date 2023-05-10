@@ -320,8 +320,7 @@ function verifyCode() {
 function verifyCodeResume() {
     let verifyCode = document.getElementById('verifyCodeResume').value
     console.log(verifyCode)
-    let dom1 = document.getElementById('resume-view')
-    let dom2 = document.getElementById('resume-download')
+    let dom = document.getElementById('resume-view')
     let content =''
     if(md5(verifyCode) == '1134f6800908febcf78cba9e036acd20') {
         content += `
@@ -344,10 +343,22 @@ function verifyCodeResume() {
             
         `
     } else {
-        alert('Wrong Code, Please try again !')
+        content = `
+        <div class="modal-header">
+              <h2 class="modal-title" id="exampleModalToggleLabel">Download Resume</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="resume-file">
+                <div class="formCode" id="form-code">
+                    <input type="number" class="form-control" id="verifyCodeResume" aria-describedby="number" placeholder="Enter Verify Code" >
+                    <p style='color: red'>Wrong Code, Please try again !!!</p>
+                    <button type="button" class="btn btn-dark" id="verifyButton" onclick="verifyCodeResume()">Show Content</button>
+                </div>
+            </div>
+        `
     }
     console.log(content)
-    dom1.innerHTML = content
+    dom.innerHTML = content
 }
 
 
