@@ -317,6 +317,39 @@ function verifyCode() {
     }
 }
 
+function verifyCodeResume() {
+    let verifyCode = document.getElementById('verifyCodeResume').value
+    console.log(verifyCode)
+    let dom1 = document.getElementById('resume-view')
+    let dom2 = document.getElementById('resume-download')
+    let content =''
+    if(md5(verifyCode) == '1134f6800908febcf78cba9e036acd20') {
+        content += `
+        <div class="modal-header">
+              <h2 class="modal-title" id="exampleModalToggleLabel">Download Resume</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+        <div class="modal-body" id="resume-file">
+            <iframe id="inlineFrameExample"
+            title="Inline Frame Example"
+            width="100%"
+            height="500px"
+            src="https://firebasestorage.googleapis.com/v0/b/porfolio-c82b8.appspot.com/o/file%2FCV-NguyenHuuThang-2023.pdf?alt=media&token=422d962b-0c80-4665-9b40-f4665b944a10">
+            </iframe>
+        </div>
+        <div class="modal-footer" id="resume-download">
+            <button type="button" class="btn btn-outline-dark btn-lg" data-bs-dismiss="modal">Close</button>
+            <a role='button' class="btn btn-dark btn-lg" href='https://firebasestorage.googleapis.com/v0/b/porfolio-c82b8.appspot.com/o/file%2FCV-NguyenHuuThang-2023.pdf?alt=media&token=422d962b-0c80-4665-9b40-f4665b944a10'>Download</a>
+              </div>
+            
+        `
+    } else {
+        alert('Wrong Code, Please try again !')
+    }
+    console.log(content)
+    dom1.innerHTML = content
+}
+
 
 
 // MD5 Encrypt
@@ -535,7 +568,6 @@ var md5 = function (string) {
     return temp.toLowerCase();
 }
 
-console.log(md5('30041975'))
 
 // console.log(DATA_PROJECTS)
 // console.log(DATA_PROJECTS_RES)
