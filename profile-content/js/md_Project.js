@@ -354,9 +354,9 @@ function verifyCodeResume() {
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
         <div class="modal-body" id="resume-file">
-            <iframe 
-            src="https://firebasestorage.googleapis.com/v0/b/porfolio-c82b8.appspot.com/o/file%2FCV-NguyenHuuThang-2023.pdf?alt=media&token=422d962b-0c80-4665-9b40-f4665b944a10">
-            </iframe>
+        <object data="your_url_to_pdf" type="application/pdf">
+            <iframe src="https://firebasestorage.googleapis.com/v0/b/porfolio-c82b8.appspot.com/o/file%2FCV-NguyenHuuThang-2023.pdf?alt=media&token=422d962b-0c80-4665-9b40-f4665b944a10" width="100%" height="500px"></iframe>
+        </object>
         </div>
         <div class="modal-footer" id="resume-download">
             <button type="button" class="btn btn-outline-dark btn-lg" data-bs-dismiss="modal">Close</button>
