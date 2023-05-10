@@ -59,10 +59,10 @@ function loadingHeader() {
             <!-- <p class="update-date">Version - ${data.version}</p> -->
         </div>
     </div>
-    <a href="${data.resumeUrl}" class="download-btn black-color"> 
+    <a class="download-btn black-color" data-bs-toggle="modal" href="#resumeModal" role="button"> 
         <!-- <i class="fas fa-file-download"></i> -->
         <i class="fa-solid fas fa-download"></i>
-        <p>Download</p>
+        <p>My Resume</p>
     </a>
     `
 
@@ -107,4 +107,5 @@ function loadingHeader() {
     `
 }
 loadingHeader()
+
 
