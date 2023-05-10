@@ -110,7 +110,7 @@
                 <div id="_pro" class="tab-pane">
                     <h1 class="rsm2_title">Projects</h1>
                     <div class="accordion accordion-borderless" id="projectList">                 
-                        <div class="formCode">
+                        <div class="formCode box-shadow">
                             <p>Contact me to get the code if you want to read this content, Thank you!
                             </p>
                             <input type="number" class="form-control" id="verifyCode" aria-describedby="emailHelp" placeholder="Enter Verify Code" >
@@ -137,6 +137,24 @@
         </div>
     </div>
 
+    <div class="modal fade" id="resumeModal" aria-hidden="true" aria-labelledby="resumeModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content" id="resume-view">
+            <div class="modal-header">
+              <h2 class="modal-title" id="exampleModalToggleLabel">Download Resume</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="resume-file">
+                <div class="formCode">
+                    <input type="number" class="form-control" id="verifyCodeResume" aria-describedby="number" placeholder="Enter Verify Code" >
+                    <button type="button" class="btn btn-dark" id="verifyButton" onclick="verifyCodeResume()">Show Content</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
     <footer class="footer  p-5">
         <p>Design & Build by Thangg</p> 
     </footer>   
