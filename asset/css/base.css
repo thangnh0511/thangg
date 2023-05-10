@@ -145,7 +145,8 @@ h1,h2,h3,h4,h5 {
 body {
     /* background: var(--theme-color-2) !important; */
     /* background: url('../img/pattern/cartographer/cartographer.png'); */
-    background: var(--background-2);
+    /* background: var(--background-2); */
+    background: transparent;
     width: 100%;
     user-select: none;
 }
