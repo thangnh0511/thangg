@@ -96,7 +96,18 @@ const DATA_PROJECTS = [
      "role": "IT Business Analyst ",
      "team_size": 20,
      "technologies": "Oracle"
-    }
+    }, 
+    {
+        "personal_ID": 1,
+        "Project_ID": 9,
+        "company_ID": 2,
+        "project_name": "E-Commerce",
+        "company": "FPT Software ",
+        "project_description": "Developing new modules and enhancing the e-commerce website.",
+        "role": "IT Business Analyst ",
+        "team_size": 14,
+        "technologies": "Magento Platform"
+       }
    ]
 
 const DATA_PROJECTS_RES = [
@@ -215,7 +226,21 @@ const DATA_PROJECTS_RES = [
     {
      "project_ID": 8,
      "responsibility": "Scenarios testing for queried lists"
-    } ]
+    },
+    {
+        "project_ID": 9,
+        "responsibility": "Gathering and Planning requirements"
+       },
+       {
+        "project_ID": 9,
+        "responsibility": "Writing document (SRS, Wireframe)"
+       },
+       {
+        "project_ID": 9,
+        "responsibility": "Support UAT previous phase"
+       }
+
+]
 
 
 function displayPro() {
@@ -329,10 +354,7 @@ function verifyCodeResume() {
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
         <div class="modal-body" id="resume-file">
-            <iframe id="inlineFrameExample"
-            title="Inline Frame Example"
-            width="100%"
-            height="500px"
+            <iframe 
             src="https://firebasestorage.googleapis.com/v0/b/porfolio-c82b8.appspot.com/o/file%2FCV-NguyenHuuThang-2023.pdf?alt=media&token=422d962b-0c80-4665-9b40-f4665b944a10">
             </iframe>
         </div>
