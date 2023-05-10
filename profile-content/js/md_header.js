@@ -62,7 +62,7 @@ function loadingHeader() {
     <a class="download-btn black-color" data-bs-toggle="modal" href="#resumeModal" role="button"> 
         <!-- <i class="fas fa-file-download"></i> -->
         <i class="fa-solid fas fa-download"></i>
-        <p>My Resume</p>
+        <p>RESUME</p>
     </a>
     `
 
