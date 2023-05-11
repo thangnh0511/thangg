@@ -342,14 +342,14 @@ function verifyCode() {
     } else {
         // alert('Wrong Code, Please try again !')
         content=`<div class="formCode box-shadow">
-        <p>Contact me to get the code if you want to read this content, Thank you!
-        </p>
+        <p>Contact me to get the Verify Code</p>
         <input type="number" class="form-control invalid-input-box" id="verifyCode" aria-describedby="passCode" placeholder="Enter Verify Code">
         <p class="invalid-input-text">Wrong Code, Please try again !!!</p>
         <button type="button" class="btn btn-dark" id="verifyButton" onclick="verifyCode()">Show Content</button>
         </div>`
+        dom.innerHTML = content
     }
-    dom.innerHTML = content
+    
 }
 
 function verifyCodeResume() {
