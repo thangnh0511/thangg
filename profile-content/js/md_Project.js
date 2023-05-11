@@ -334,12 +334,22 @@ function displayPro() {
 
 function verifyCode() {
     // let code = prompt('Please Enter Code:')
+    let dom = document.getElementById('projectList')
+    let content =''
     let verifyCode = document.getElementById('verifyCode').value
     if(md5(verifyCode) == '1134f6800908febcf78cba9e036acd20') {
         displayPro()
     } else {
-        alert('Wrong Code, Please try again !')
+        // alert('Wrong Code, Please try again !')
+        content=`<div class="formCode box-shadow">
+        <p>Contact me to get the code if you want to read this content, Thank you!
+        </p>
+        <input type="number" class="form-control invalid-input-box" id="verifyCode" aria-describedby="passCode" placeholder="Enter Verify Code">
+        <p class="invalid-input-text">Wrong Code, Please try again !!!</p>
+        <button type="button" class="btn btn-dark" id="verifyButton" onclick="verifyCode()">Show Content</button>
+        </div>`
     }
+    dom.innerHTML = content
 }
 
 function verifyCodeResume() {
@@ -370,8 +380,8 @@ function verifyCodeResume() {
             </div>
             <div class="modal-body" id="resume-file">
                 <div class="formCode" id="form-code">
-                    <input type="number" class="form-control" id="verifyCodeResume" aria-describedby="number" placeholder="Enter Verify Code" >
-                    <p style='color: red'>Wrong Code, Please try again !!!</p>
+                    <input type="number" class="form-control invalid-input-box" id="verifyCodeResume" aria-describedby="number" placeholder="Enter Verify Code" >
+                    <p class='invalid-input-text'>Wrong Code, Please try again !!!</p>
                     <button type="button" class="btn btn-dark" id="verifyButton" onclick="verifyCodeResume()">Show Content</button>
                 </div>
             </div>

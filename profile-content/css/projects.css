@@ -122,8 +122,9 @@
 
 .formCode p {
     padding: 12px 12px 12px 12px;
-    font-size: 14px;
-    font-style: italic;
+    font-size: 18px;
+    font-style: normal;
+    /* font-weight: 300; */
     color: var(--primary-1);
     text-align: center;
 }

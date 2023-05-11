@@ -146,10 +146,15 @@ body {
     /* background: var(--theme-color-2) !important; */
     /* background: url('../img/pattern/cartographer/cartographer.png'); */
     /* background: var(--background-2); */
-    background: transparent;
+    background: var(--color-black);
     width: 100%;
     user-select: none;
+
+
 }
+
+
+
 div {
     font-family: var(--font);
 }
@@ -255,7 +260,7 @@ section {
     color: var(--black-color);
     font-size: 24px;
     display: block;
-    width: 150px;
+    width: 120px;
 }
 
 .back-btn:hover {
@@ -263,3 +268,4 @@ section {
     cursor: pointer;
 }
 
+/* Background */

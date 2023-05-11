@@ -56,7 +56,7 @@
     display: block;
     font-size: 20px;
     width: 120px;
-    padding: 5px 5px;
+    padding: 0px 5px;
     margin: 5px;
     border-radius: 8px;
     text-decoration: none;
@@ -403,4 +403,17 @@
     border-radius: 0px 0px 8px 8px  ;
     height: 40px;
     /* background: var(--background-11-deep-blue); */
+}
+
+.invalid-input-box {
+    border: 2px solid var(--color-red) !important;
+    color: var(--color-red);
+}
+
+.invalid-input-text {
+    font-size: 14px !important;
+    color: var(--color-red) !important;
+    text-align: left !important;
+    padding: 6px 0px !important;
+    font-style: normal !important;
 }
